@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_gradient"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="183dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="17dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:text="T-Know"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:text="한국공학대학교 신입생 가이드 앱"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="203dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="231dp">
+
+            <TextView
+                android:layout_width="62dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="35dp"
+                android:rotation="-45"
+                android:text="TU Know?"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/main_tino_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/store_fragment_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorColor="@color/main"
+        app:tabSelectedTextColor="@color/main">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="어디있지?" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="뭐 먹지?" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="어떻게 해?" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="이건 뭐지?" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/store_fragment_tablayout" />
+
+    <LinearLayout
+        android:id="@+id/school_food_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="346dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="27dp"
+            android:text="오늘 메뉴는?"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="104dp"
+                android:layout_marginLeft="27dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:text="Tip 지하식당"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/menu_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="메뉴들"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="104dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="27dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:text="E동 식당"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/menu_e"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="메뉴들"
+                    android:textSize="10dp"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tong_hack_times_layout"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="346dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="27dp"
+            android:text="셔틀버스 몇 분 남았지?"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="74dp"
+                android:layout_marginLeft="27dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:text="등교(정왕역->한국공학대학교)"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/go_school_times_this_time"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="이번 차"
+                            android:textAlignment="center"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/go_school_times_this_time_remain"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="10분 전 - "
+                            android:textAlignment="center"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/go_school_times_this_time_departure"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="오후 2:25분 출발"
+                            android:textAlignment="center"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/go_school_times_next_time"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="다음 차"
+                            android:textAlignment="center"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/go_school_times_next_time_remain"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="25분 전 - "
+                            android:textAlignment="center"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/go_school_times_next_time_departure"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="오후 2:50분 출발"
+                            android:textAlignment="center"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="74dp"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="27dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:text="하교(한국공학대학교->정왕역)"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/go_home_times_this_time"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="이번 차"
+                            android:textAlignment="center"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/go_home_times_this_time_remain"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="10분 전 - "
+                            android:textAlignment="center"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/go_home_times_this_time_departure"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="오후 2:25분 출발"
+                            android:textAlignment="center"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/go_home_times_next_time"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="다음 차"
+                            android:textAlignment="center"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/go_home_times_next_time_remain"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="25분 전 - "
+                            android:textAlignment="center"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/go_home_times_next_time_departure"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="오후 2:50분 출발"
+                            android:textAlignment="center"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

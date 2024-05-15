@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="89dp"
+    tools:context=".PlaceMenuFragment"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/HowFragment"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:id="@+id/btn_scholarship"
+
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/menu_how_scholarship_icon"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="장학금 정보"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:orientation="vertical"
+        android:id="@+id/btn_library"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/menu_how_library_icon"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="도서관 이용"
+            android:textStyle="bold"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_go_to_school"
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/menu_how_bus_icon" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="통학"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="85dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/btn_other"
+        >
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/menu_how_sugang_icon"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="수강 신청"
+            android:textStyle="bold"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
