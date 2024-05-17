@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="10dp"
+        android:text="1. 학적"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="30dp"
+        android:text="학적기본관리"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="45dp"
+        android:text="- 본인의 모든 개인정보를 볼 수 있는 공간입니다."
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="30dp"
+        android:text="학적변동관리"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="45dp"
+        android:text="- 본인이 휴학 또는 복학을 할 떄 신청을 한 후 지도교수의 승인을 받습니다."
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="45dp"
+        android:text="- 휴학을 하게 된가면 지도교수님과 상담을 받고 휴학 신청을 하는 것이 좋습니다."
+        android:textSize="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        android:src="@drawable/what_academic_changes_image"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:text="복수(부)전공 신청"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="45dp"
+        android:text="- 본인이 신청하고 싶은 전공을 선택한 수 신청하면 학과장의 승인을 받으면 복수 전공자가 될 수 있습니다."
+        android:textSize="12dp" />
+    
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="27dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_progress_circle_now"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/bg_progress_circle"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/bg_progress_circle"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/bg_progress_circle"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/bg_progress_circle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/maingogogo"
+        android:clickable="true"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="47dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="돌아가기"/>
+    </LinearLayout>
+
+
+</LinearLayout>
