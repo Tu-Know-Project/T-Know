@@ -6,7 +6,7 @@
     android:layout_height="89dp"
     android:gravity="center"
     android:orientation="horizontal"
-    tools:context=".PlaceMenuFragment">
+    tools:context=".mainPage.tapMenu.PlaceMenuFragment">
 
     <LinearLayout
         android:id="@+id/btn_ucan"

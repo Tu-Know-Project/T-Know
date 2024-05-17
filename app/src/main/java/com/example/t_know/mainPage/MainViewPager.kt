@@ -1,11 +1,12 @@
-package com.example.t_know
+package com.example.t_know.mainPage
 
-import android.app.Activity
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.t_know.mainPage.tapMenu.EatMenuFragment
+import com.example.t_know.mainPage.tapMenu.HowMenuFragment
+import com.example.t_know.mainPage.tapMenu.PlaceMenuFragment
+import com.example.t_know.mainPage.tapMenu.WhatMenuFragment
 
 class MainViewPager(activity: AppCompatActivity) : FragmentStateAdapter(activity){
 
