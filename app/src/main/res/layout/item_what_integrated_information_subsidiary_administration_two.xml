@@ -8,7 +8,7 @@
         android:layout_height="56dp"
         android:gravity="left|center"
         android:layout_marginLeft="10dp"
-        android:text="1. 생활관"
+        android:text="2. 예비군"
         android:textSize="24dp"
         android:textStyle="bold"/>
 
@@ -17,7 +17,7 @@
         android:layout_height="30dp"
         android:gravity="left|center"
         android:layout_marginLeft="30dp"
-        android:text="건강검진서 등록"
+        android:text="예비군 전입 신청"
         android:textSize="16dp"
         android:textStyle="bold"/>
 
@@ -26,32 +26,7 @@
         android:layout_height="20dp"
         android:gravity="left|center"
         android:layout_marginLeft="45dp"
-        android:text="- 기숙사에 입주를 하기 위해서는 폐결핵 검사 결과서가 필요합니다."
-        android:textSize="12dp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:gravity="left|center"
-        android:layout_marginLeft="45dp"
-        android:text="- 인근 병원에서 검사를 받은 후 결과서를 스캔하여 첨부하시면 됩니다."
-        android:textSize="12dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:text="입주 신청"
-        android:textSize="16dp"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:gravity="left|center"
-        android:layout_marginLeft="45dp"
-        android:text="- 기숙사에 입주하기 위해 입주신청하는 페이지입니다."
+        android:text="- 군복학 후 학생 예비군을 신청하는 페이지입니다."
         android:textSize="12dp" />
 
     <TextView
@@ -59,44 +34,35 @@
         android:layout_height="40dp"
         android:gravity="left|center"
         android:layout_marginLeft="45dp"
-        android:text="- 입주기간, 서약여부, 개인정보 수집 및 활용 동의를 한 후 계죄정보를 입력하면 입주 신청이 완료됩니다."
+        android:text="- 학적사항, 인적사항, 병역사항을 확인 및 기술한 후, 신청하면 예비군 일정 시 학생예비군으로 갈 수 있습니다."
         android:textSize="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        android:src="@drawable/what_curriculum_check_image"/>
+
+
 
     <LinearLayout
         android:layout_width="220dp"
         android:layout_height="20dp"
         android:layout_marginLeft="96dp"
-        android:layout_marginTop="57dp"
+        android:layout_marginTop="193dp"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/bg_progress_circle"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
             android:src="@drawable/bg_progress_circle_now"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle"/>
     </LinearLayout>
 
     <LinearLayout
