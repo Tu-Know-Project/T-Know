@@ -58,6 +58,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
             startActivity(intent)
         }
     }
+
     private fun startAutoScroll() {
         lifecycleScope.launch {
             while (isActive) {

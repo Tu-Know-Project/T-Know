@@ -16,6 +16,12 @@
             android:name=".mainPage.what.integrated.IntegratedMainActivity"
             android:exported="false" />
         <activity
+            android:name=".mainPage.what.integrated.academic.AcademicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainPage.what.integrated.subsidiary.SubsidiaryActivity"
+            android:exported="false" />
+        <activity
             android:name=".mainPage.MainActivity"
             android:exported="true">
             <intent-filter>

@@ -1,8 +1,0 @@
-package com.example.t_know.mainPage.what.integrated
-
-import BaseActivity
-import com.example.t_know.databinding.ActivityWhatIntegratedInformationAcademicAdministrationMainBinding
-
-class SubsidiaryActivity : BaseActivity<ActivityWhatIntegratedInformationAcademicAdministrationMainBinding>(
-    ActivityWhatIntegratedInformationAcademicAdministrationMainBinding::inflate){
-}
