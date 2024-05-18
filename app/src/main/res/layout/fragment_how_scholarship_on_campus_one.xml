@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_routebar"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="교내 장학금에 대해 궁금해요!"
+                android:textSize="25dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12.5dp"
+                android:text="교내 장학금은 재학생 장학금과 입학 장학금,"
+                android:textSize="12dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12.5dp"
+                android:text="리더 장학금으로 나뉩니다!"
+                android:textSize="12dp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_tino_icon"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="26dp"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:text="I. 재학생 장학금"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="24dp"/>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:text=" 1. 성적우수 장학금"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=": 학과별 성적우수 학생들을 대상으로 성적 기준에 따라 지급하는 장학금. 학부(과)에서 별도 기준을 정하여 선발함(단, 최소요건 충족)"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="◦ 최소요건"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="- 평점평균 3.3 이상, 취득학점 16학점 이상(졸업학기 9학점 이상)"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="2px"
+        android:layout_marginLeft="10dp"
+        android:background="#000000"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:text=" 2. 성적향상 장학금"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text=": 직전학기 대비 성적이 향상된 학생들을 대상으로 50만원을 지급하는 장학금."
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="당 학기 취득학점 16학점이상 / 성적향상 환산점수를 기준으로 고득점자순으로 예산범위내 선발"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_progress_circle_now"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dp"
+            android:src="@drawable/bg_progress_circle"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dp"
+            android:src="@drawable/bg_progress_circle"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dp"
+            android:src="@drawable/bg_progress_circle"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
