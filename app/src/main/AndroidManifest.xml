@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TKnow"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="YOUR_CLIENT_ID_HERE"/>
+        <activity
+            android:name=".mapPage.MapActivity"
+            android:exported="false"
+            android:label="@string/title_activity_map"
+            android:theme="@style/Theme.TKnow" />
         <activity
             android:name=".mainPage.what.integrated.IntegratedMainActivity"
             android:exported="false" />
