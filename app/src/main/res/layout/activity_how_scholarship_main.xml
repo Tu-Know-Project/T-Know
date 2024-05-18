@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_routebar"
+            android:orientation="vertical">
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="학교에 어떤 장학금이 있나요?"
+                android:textSize="25dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12.5dp"
+                android:text="저희 학교 장학금에는 교내장학금, 교외장학금,"
+                android:textSize="12dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12.5dp"
+                android:text="국가장학금이 있습니다!"
+                android:textSize="12dp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_tino_icon"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="26dp"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/bg_routebar"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="37dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:text="교내 장학금 보러가기"
+                android:gravity="left|center"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="29dp"
+            android:src="@drawable/school_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_routebar"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="37dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:text="교외 장학금 보러가기"
+                android:gravity="left|center"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="29dp"
+            android:src="@drawable/school_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_routebar"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="37dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:text="국가 장학금 보러가기"
+                android:gravity="left|center"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="29dp"
+            android:src="@drawable/school_logo" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
