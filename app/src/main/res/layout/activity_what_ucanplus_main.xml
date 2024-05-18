@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="313.56dp"
+            android:layout_height="90dp"
+            android:text="U CAN + 핵심정리"
+            android:textSize="24dp"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/main_tino_icon"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/academic_administration"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_routebar"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="37dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="175dp"
+                android:layout_height="25dp"
+                android:text="비교과 신청하기"
+                android:gravity="left|center"
+                android:textSize="20dp" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/routebar_arrow_icon"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_what_tuk_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subsidiary_administration"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_routebar"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="37dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="175dp"
+                android:layout_height="25dp"
+                android:text="TIP 장학금 신청하기"
+                android:textSize="20dp" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/routebar_arrow_icon"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_what_tuk_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/counsel"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_routebar"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="37dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="175dp"
+                android:layout_height="25dp"
+                android:text="상담 신청하기"
+                android:textSize="20dp" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/routebar_arrow_icon"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu_what_tuk_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/maingogogo"
+        android:clickable="true"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="67dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="돌아가기"/>
+    </LinearLayout>
+
+</LinearLayout>

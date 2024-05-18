@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="10dp"
+        android:text="2. 예비군"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="30dp"
+        android:text="예비군 전입 신청"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="45dp"
+        android:text="- 군복학 후 학생 예비군을 신청하는 페이지입니다."
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="left|center"
+        android:layout_marginLeft="45dp"
+        android:text="- 학적사항, 인적사항, 병역사항을 확인 및 기술한 후, 신청하면 예비군 일정 시 학생예비군으로 갈 수 있습니다."
+        android:textSize="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        android:src="@drawable/what_curriculum_check_image"/>
+
+
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="193dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_progress_circle"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:src="@drawable/bg_progress_circle_now"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/maingogogo"
+        android:clickable="true"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="47dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="돌아가기"/>
+    </LinearLayout>
+
+
+</LinearLayout>
