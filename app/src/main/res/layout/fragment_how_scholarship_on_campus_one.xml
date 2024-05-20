@@ -24,14 +24,14 @@
                 android:gravity="center"/>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="12.5dp"
+                android:layout_height="17.5dp"
                 android:text="교내 장학금은 재학생 장학금과 입학 장학금,"
                 android:textSize="12dp"
                 android:gravity="center"/>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="12.5dp"
+                android:layout_height="17.5dp"
                 android:text="리더 장학금으로 나뉩니다!"
                 android:textSize="12dp"
                 android:gravity="center"/>
