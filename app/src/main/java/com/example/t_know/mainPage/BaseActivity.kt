@@ -2,6 +2,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.viewbinding.ViewBinding
 
 abstract class BaseActivity<V : ViewBinding>(
@@ -15,6 +16,7 @@ abstract class BaseActivity<V : ViewBinding>(
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = inflate.invoke(layoutInflater)
+        installSplashScreen()
         setContentView(binding.root)
     }
 

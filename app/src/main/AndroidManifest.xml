@@ -19,22 +19,26 @@
             android:name=".mapPage.MapActivity"
             android:exported="false"
             android:label="@string/title_activity_map"
+            android:parentActivityName=".mainPage.MainActivity"
             android:theme="@style/Theme.TKnow" />
         <activity
             android:name=".mainPage.what.integrated.IntegratedMainActivity"
+            android:parentActivityName=".mainPage.MainActivity"
             android:exported="false" />
         <activity
             android:name=".mainPage.what.integrated.academic.AcademicActivity"
+            android:parentActivityName=".mainPage.MainActivity"
             android:exported="false" />
         <activity
             android:name=".mainPage.what.integrated.subsidiary.SubsidiaryActivity"
+            android:parentActivityName=".mainPage.MainActivity"
             android:exported="false" />
         <activity
             android:name=".mainPage.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
