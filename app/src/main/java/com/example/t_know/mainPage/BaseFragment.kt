@@ -8,12 +8,20 @@ import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
 import kotlinx.coroutines.Job
 
-abstract class BaseFragment<V: ViewBinding>(@LayoutRes val layoutResource :Int, private val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> V): Fragment() {
+abstract class BaseFragment<V: ViewBinding>(
+    @LayoutRes val layoutResource: Int,
+    private val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> V
+) : Fragment() {
 
     private lateinit var fetchJob: Job
 
     private var _binding: V? = null
-    protected val binding : V get() = _binding!!
+    protected val binding: V get() = _binding!!
+
+    init {
+        // Initialize fetchJob in the constructor
+        fetchJob = Job()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -36,9 +44,10 @@ abstract class BaseFragment<V: ViewBinding>(@LayoutRes val layoutResource :Int, 
 
     override fun onDestroyView() {
         super.onDestroyView()
-        if (fetchJob.isActive) {
+        if (::fetchJob.isInitialized && fetchJob.isActive) {
             fetchJob.cancel()
         }
         _binding = null
     }
 }
+

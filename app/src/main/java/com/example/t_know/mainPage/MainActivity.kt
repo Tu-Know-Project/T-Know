@@ -62,7 +62,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
     private fun startAutoScroll() {
         lifecycleScope.launch {
             while (isActive) {
-                delay(3000)
+                delay(5000)
                 val currentPage = binding.fragmentContainer.currentItem
                 val totalPages = binding.fragmentContainer.adapter?.itemCount ?: 0
                 if (totalPages > 0) {
