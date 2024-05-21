@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_routebar"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="도서관에 대해서 알려주세요!"
+                android:textSize="25dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="17.5dp"
+                android:text="저희 학교 도서관에는 열람실, 라운지, 스터디룸 등"
+                android:textSize="12dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="17.5dp"
+                android:text="다양한 시스템이 제공되어 있습니다!"
+                android:textSize="12dp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_tino_icon"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="26dp"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/time"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/bg_routebar"
+        android:elevation="10dp"
+        android:outlineProvider="paddedBounds"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="37dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="이용 시간 및 이용 방법 보러가기"
+                android:gravity="left|center"
+                android:textSize="18dp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/school_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_routebar"
+        android:elevation="10dp"
+        android:outlineProvider="paddedBounds"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="37dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="도서관 외에 이용시설 보러가기"
+                android:gravity="left|center"
+                android:textSize="18dp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/school_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/use"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_routebar"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:outlineProvider="paddedBounds"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="37dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="이용시설 사용방법 보러가기"
+                android:gravity="left|center"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/school_logo" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

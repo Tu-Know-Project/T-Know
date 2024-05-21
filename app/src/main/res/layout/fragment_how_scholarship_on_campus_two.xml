@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:text=" 3. 입학금지원 장학금"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=": 입학금 실비용 산입에 대한 학생 실납부 등록금 부담 완화하기 위해 75000원을 지급하는 장학금
+"
+        android:layout_marginTop="20dp"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="매학기(1,2학기) 등록금 고지시 재학생 1학년(당해연도 입학생 제외)"
+        android:textSize="12dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="2px"
+        android:layout_marginLeft="10dp"
+        android:background="#000000"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:text=" 4. 학부(과) 특성화장학금"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text=": 자격증, 경진대회 등 학과별 특성화 기준에 따른 성과 장려 및 학부생 전공설계를 장려하기 위해 최대 150만원을 지급하는 장학금."
+            android:layout_marginTop="20dp"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="평점평균1.6이상, 취득학점 12학점이상(졸업학기 취득학점 미적용) / 학부(과)에서 별도 기준을 정하여 선발"
+            android:textSize="12dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="신/편입생 입학학기는 성적기준 미적용"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="380dp"
+        android:layout_height="2px"
+        android:layout_marginLeft="10dp"
+        android:background="#000000"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="25dp"
+            android:text=" 5. T.I.P.포인트 장학금"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text=": 비교과프로그램 활성화
+"
+            android:layout_marginTop="20dp"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="(T.I.P. : Talent Improvement Platform)"
+            android:textSize="12dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="/ 평점평균 1.6 이상, 취득학점 12학점 이상(졸업학기 취득학점 미적용)"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="126dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_progress_circle"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dp"
+            android:src="@drawable/bg_progress_circle_now"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dp"
+            android:src="@drawable/bg_progress_circle"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46dp"
+            android:src="@drawable/bg_progress_circle"/>
+    </LinearLayout>
+
+</LinearLayout>

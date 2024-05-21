@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:text=" 5. 멀티미디어실"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center|left"
+            android:text=": pc 14대, 큐브 복합기가 1대 있는 미디어 실"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="2px"
+        android:layout_marginLeft="10dp"
+        android:background="#000000"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="층별 안내"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="51dp"
+        android:src ="@drawable/how_lib_second_floor"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="51dp"
+        android:src ="@drawable/how_lib_third_floor"/>
+
+    <LinearLayout
+        android:layout_width="75dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_progress_circle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/bg_progress_circle_now" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

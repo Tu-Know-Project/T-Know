@@ -24,14 +24,14 @@
                 android:gravity="center"/>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="12.5dp"
+                android:layout_height="17.5dp"
                 android:text="저희 학교 장학금에는 교내장학금, 교외장학금,"
                 android:textSize="12dp"
                 android:gravity="center"/>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="12.5dp"
+                android:layout_height="17.5dp"
                 android:text="국가장학금이 있습니다!"
                 android:textSize="12dp"
                 android:gravity="center"/>
@@ -48,11 +48,14 @@
     </FrameLayout>
 
     <LinearLayout
+        android:id="@+id/on_scholarship"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginLeft="31dp"
         android:layout_marginTop="45dp"
         android:background="@drawable/bg_routebar"
+        android:elevation="10dp"
+        android:outlineProvider="paddedBounds"
         android:clickable="true"
         android:orientation="horizontal">
 
@@ -79,11 +82,14 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/off_scholarship"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginLeft="31dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/bg_routebar"
+        android:elevation="10dp"
+        android:outlineProvider="paddedBounds"
         android:clickable="true"
         android:orientation="horizontal">
 
@@ -110,12 +116,15 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/state_scholarship"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginLeft="31dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_routebar"
         android:clickable="true"
+        android:elevation="10dp"
+        android:outlineProvider="paddedBounds"
         android:orientation="horizontal">
 
         <LinearLayout

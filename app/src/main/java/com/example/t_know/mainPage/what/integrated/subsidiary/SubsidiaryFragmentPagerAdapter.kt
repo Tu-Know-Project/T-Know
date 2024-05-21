@@ -10,7 +10,6 @@ class SubsidiaryFragmentPagerAdapter(activity: FragmentActivity) : FragmentState
         fragments= listOf(
             OneSubsidiaryFragment(),
             TwoSubsidiaryFragment(),
-
         )
     }
     override fun getItemCount(): Int {

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_routebar"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="교외 장학금에 대해 궁금해요!"
+                android:textSize="25dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12.5dp"
+                android:text="교외 장학금은 교외 단체에서 지급하는 장학금입니다!"
+                android:textSize="12dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_tino_icon"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="26dp"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:text=" 1. 시흥대학 장학금"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center|left"
+            android:text=": (재)시흥시인재양성재단에서 지역인재를 발굴을 위해 200만원이내를 지원하는 장학금."
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="2px"
+        android:layout_marginLeft="10dp"
+        android:background="#000000"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:text=" 2. 안산꿈키움 장학금"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center|left"
+            android:text=": (재)안산인재육성재단에서 성적우수 및 가계곤란 학생에게 200만원 이내를 지원하는 장학금."
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
