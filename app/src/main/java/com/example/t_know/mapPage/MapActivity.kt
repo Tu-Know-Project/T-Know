@@ -13,6 +13,8 @@ import com.example.t_know.BuildConfig
 import com.example.t_know.R
 import com.example.t_know.databinding.ActivityMapBinding
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.naver.maps.map.CameraAnimation
+import com.naver.maps.map.CameraUpdate
 import com.naver.maps.map.LocationTrackingMode
 import com.naver.maps.map.MapFragment
 import com.naver.maps.map.MapView
@@ -27,7 +29,6 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
     OnMapReadyCallback {
     lateinit var behavior: BottomSheetBehavior<LinearLayout>
 
-    private lateinit var mapView: MapView
     private val LOCATION_PERMISSTION_REQUEST_CODE: Int = 1000
     private lateinit var locationSource: FusedLocationSource
     private lateinit var naverMap: NaverMap
@@ -46,20 +47,7 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
         locationPermissionRequest
         locationSource = FusedLocationSource(this, LOCATION_PERMISSTION_REQUEST_CODE)
 
-        binding.categoryGroup.bringToFront()
-
-        binding.categoryRestaurant.setOnClickListener{
-            showMarkers(RestaurantMarkerList)
-        }
-        binding.categoryDessert.setOnClickListener{
-            showMarkers(DessertMarkerList)
-        }
-        binding.categoryBar.setOnClickListener{
-            showMarkers(BarMarkerList)
-        }
-        binding.categoryPartnership.setOnClickListener{
-            showMarkers(PartnerMarkerList)
-        }
+        selectCategory()
         persistentBottomSheetEvent()
     }
 
@@ -106,25 +94,51 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
     // 눌러졌을 때 이미지 달라지게 - 무슨 탭이 눌러졌는지
     private fun showMarkers(markerList: List<MarkerInfo>) {
         clearMarkers()
-        markerList.forEach { info ->
-            val marker = Marker()
-            marker.position = info.position
-            marker.captionText = info.caption
-            marker.map = naverMap
-            marker.icon = when(info.category){
+        if (markerList.isNotEmpty()) {
+            val firstMarkerPosition = markerList[0].position
 
-                Category.RESTAURANT -> OverlayImage.fromResource(R.drawable.marker_restaurant_icon)
-                Category.DESSERT -> OverlayImage.fromResource(R.drawable.marker_dessert_icon)
-                Category.BAR -> OverlayImage.fromResource(R.drawable.markers_bar_icon)
-                Category.PARTNERSHIP -> OverlayImage.fromResource(R.drawable.markers_partnership_icon)
-
+            markerList.forEach { info ->
+                val marker = Marker()
+                marker.position = info.position
+                marker.captionText = info.caption
+                marker.map = naverMap
+                marker.icon = when(info.category) {
+                    Category.RESTAURANT -> OverlayImage.fromResource(R.drawable.marker_restaurant_icon)
+                    Category.DESSERT -> OverlayImage.fromResource(R.drawable.marker_dessert_icon)
+                    Category.BAR -> OverlayImage.fromResource(R.drawable.markers_bar_icon)
+                    Category.PARTNERSHIP -> OverlayImage.fromResource(R.drawable.markers_partnership_icon)
+                }
+                markers.add(marker)
             }
-            markers.add(marker)
+
+            naverMap.moveCamera(CameraUpdate.scrollTo(firstMarkerPosition).animate(CameraAnimation.Fly))
         }
     }
 
-    private fun clearMarkers(){
-        markers.forEach{ it.map = null }
-        markers = mutableListOf(Marker())
+    private fun clearMarkers() {
+        markers.forEach { it.map = null }
+        markers.clear()
     }
+
+    private fun selectCategory() {
+        binding.categoryGroup.bringToFront()
+
+        binding.categoryRestaurant.setOnClickListener {
+            showMarkers(RestaurantMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_EXPANDED
+        }
+        binding.categoryDessert.setOnClickListener {
+            showMarkers(DessertMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_EXPANDED
+        }
+        binding.categoryBar.setOnClickListener {
+            showMarkers(BarMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_EXPANDED
+        }
+        binding.categoryPartnership.setOnClickListener {
+            showMarkers(PartnerMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_EXPANDED
+        }
+    }
+
 }
