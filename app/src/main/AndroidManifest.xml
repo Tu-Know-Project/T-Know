@@ -21,13 +21,28 @@
             android:label="@string/title_activity_map"
             android:theme="@style/Theme.TKnow" />
         <activity
+            android:name=".mainPage.how.scholarship.on.OnScholarshipActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainPage.how.scholarship.off.OffScholarshipActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainPage.how.scholarship.state.StateScholarshipActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".mainPage.what.integrated.IntegratedMainActivity"
+            android:parentActivityName=".mainPage.MainActivity"
             android:exported="false" />
         <activity
             android:name=".mainPage.what.integrated.academic.AcademicActivity"
+            android:parentActivityName=".mainPage.MainActivity"
             android:exported="false" />
         <activity
             android:name=".mainPage.what.integrated.subsidiary.SubsidiaryActivity"
+            android:parentActivityName=".mainPage.MainActivity"
             android:exported="false" />
         <activity
             android:name=".mainPage.MainActivity"

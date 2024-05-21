@@ -14,9 +14,7 @@ class ThreeAcademicFragment : BaseFragment<FragmentWhatIntegratedInformationAcad
 ) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        Log.d("create", "create")
         super.onViewCreated(view, savedInstanceState)
-        Log.d("create", "maybe")
     }
 
 

@@ -12,12 +12,7 @@ class FiveAcademicFragment : BaseFragment<FragmentWhatIntegratedInformationAcade
 ) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        clickBackButton()
     }
     
-    private fun clickBackButton(){
-        binding.maingogogo.setOnClickListener {
-            activity?.onBackPressed()
-        }
-    }
+
 }

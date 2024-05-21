@@ -48,6 +48,7 @@
     </FrameLayout>
 
     <LinearLayout
+        android:id="@+id/on_scholarship"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginLeft="31dp"
@@ -81,6 +82,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/off_scholarship"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginLeft="31dp"
@@ -114,6 +116,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/state_scholarship"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginLeft="31dp"
