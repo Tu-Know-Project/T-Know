@@ -239,6 +239,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <ImageView
+                    android:id="@+id/place_image"
                     android:layout_margin="20dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
