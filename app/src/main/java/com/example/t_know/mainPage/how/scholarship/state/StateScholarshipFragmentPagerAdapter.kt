@@ -10,7 +10,9 @@ class StateScholarshipFragmentPagerAdapter(activity: FragmentActivity) : Fragmen
     private val fragments : List<Fragment>
     init {
         fragments= listOf(
-            OneOffScholarshipFragment(),
+            OneStateScholarshipFragment(),
+            TwoStateScholarshipFragment(),
+            ThreeStateScholarshipFragment(),
         )
     }
     override fun getItemCount(): Int {

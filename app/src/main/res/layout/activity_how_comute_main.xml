@@ -41,6 +41,7 @@
     </FrameLayout>
 
     <LinearLayout
+        android:id="@+id/three_btn"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginLeft="31dp"
@@ -73,6 +74,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/fif_btn"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginLeft="31dp"
@@ -105,6 +107,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/six_btn"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginLeft="31dp"

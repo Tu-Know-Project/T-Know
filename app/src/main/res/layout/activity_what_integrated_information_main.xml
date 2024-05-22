@@ -4,56 +4,80 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:orientation="horizontal">
-        
-        <TextView
-            android:layout_width="313.56dp"
-            android:layout_height="90dp"
-            android:text="통합정보시스템 핵심정리"
-            android:textSize="24dp"
-            android:gravity="center"/>
+        android:layout_height="116dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_routebar"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="통합정보시스템에 대해"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="알려주세요!"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="통정시에 대해 알려드릴께요!"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:src="@drawable/main_tino_icon"/>
-    </LinearLayout>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/main_tino_icon" />
+
+    </FrameLayout>
 
     <LinearLayout
         android:id="@+id/academic_administration"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginLeft="31dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="45dp"
         android:background="@drawable/bg_routebar"
+        android:elevation="10dp"
+        android:outlineProvider="paddedBounds"
         android:clickable="true"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_width="240dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="31dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="37dp"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="175dp"
+                android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:text="학사행정 바로가기"
                 android:gravity="left|center"
-                android:textSize="20dp" />
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="3dp"
-                android:src="@drawable/routebar_arrow_icon"/>
+                android:textSize="18dp" />
         </LinearLayout>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/menu_what_tuk_icon" />
+            android:layout_marginTop="15dp"
+            android:src="@drawable/school_logo" />
 
     </LinearLayout>
 
@@ -62,32 +86,31 @@
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_marginLeft="31dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/bg_routebar"
+        android:elevation="10dp"
+        android:outlineProvider="paddedBounds"
         android:clickable="true"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_width="240dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="31dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="37dp"
             android:orientation="horizontal">
             <TextView
-                android:layout_width="175dp"
+                android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:text="부속행정 바로가기"
-                android:textSize="20dp" />
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="3dp"
-                android:src="@drawable/routebar_arrow_icon"/>
+                android:gravity="left|center"
+                android:textSize="18dp" />
         </LinearLayout>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/menu_what_tuk_icon" />
+            android:layout_marginTop="15dp"
+            android:src="@drawable/school_logo" />
 
     </LinearLayout>
 

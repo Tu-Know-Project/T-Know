@@ -50,7 +50,7 @@
         android:layout_width="75dp"
         android:layout_height="20dp"
         android:layout_marginLeft="172dp"
-        android:layout_marginTop="193dp"
+        android:layout_marginTop="188dp"
         android:orientation="horizontal">
 
         <ImageView

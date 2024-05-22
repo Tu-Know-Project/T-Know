@@ -24,7 +24,7 @@
                 android:gravity="center"/>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="12.5dp"
+                android:layout_height="17.5dp"
                 android:text="교외 장학금은 교외 단체에서 지급하는 장학금입니다!"
                 android:textSize="12dp"
                 android:gravity="center"/>

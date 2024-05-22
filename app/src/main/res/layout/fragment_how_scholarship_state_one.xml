@@ -24,7 +24,7 @@
                 android:gravity="center"/>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="12.5dp"
+                android:layout_height="17.5dp"
                 android:text="국가장학금은 1, 2유형으로 나뉘며 한국장학재단에서 선발합니다!"
                 android:textSize="12dp"
                 android:gravity="center"/>

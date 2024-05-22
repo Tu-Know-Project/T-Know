@@ -3,13 +3,12 @@ package com.example.t_know.mapPage
 import BaseActivity
 import android.Manifest
 import android.os.Bundle
-import android.text.method.TextKeyListener.clear
-import android.util.Log
+
 import android.view.View
 import android.widget.LinearLayout
-import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.t_know.BuildConfig
+
 import com.example.t_know.R
 import com.example.t_know.databinding.ActivityMapBinding
 import com.google.android.material.bottomsheet.BottomSheetBehavior
