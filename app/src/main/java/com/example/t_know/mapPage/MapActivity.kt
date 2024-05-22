@@ -3,7 +3,10 @@ package com.example.t_know.mapPage
 import BaseActivity
 import android.Manifest
 import android.os.Bundle
+import android.util.Log
+import android.view.MotionEvent
 import android.view.View
+import android.view.View.OnTouchListener
 import android.widget.LinearLayout
 import androidx.activity.result.contract.ActivityResultContracts
 import com.bumptech.glide.Glide
@@ -22,6 +25,7 @@ import com.naver.maps.map.overlay.Marker
 import com.naver.maps.map.overlay.OverlayImage
 import com.naver.maps.map.util.FusedLocationSource
 
+
 class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate),
     OnMapReadyCallback {
     lateinit var behavior: BottomSheetBehavior<LinearLayout>
@@ -35,7 +39,6 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
         super.onCreate(savedInstanceState)
         val API_KEY = BuildConfig.CLIENT_KEY
 
-        // Initialize locationSource
         locationSource = FusedLocationSource(this, LOCATION_PERMISSION_REQUEST_CODE)
 
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map_fragment) as MapFragment?
@@ -52,12 +55,11 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
 
         selectCategory()
         persistentBottomSheetEvent()
+
     }
 
     private fun persistentBottomSheetEvent() {
         behavior = BottomSheetBehavior.from(binding.bottomSheet)
-        // Initialize the BottomSheet in collapsed state
-        behavior.state = BottomSheetBehavior.STATE_COLLAPSED
         behavior.addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
             override fun onSlide(bottomSheet: View, slideOffset: Float) {}
 
@@ -79,10 +81,12 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
         naverMap.locationTrackingMode = LocationTrackingMode.Follow
 
         behavior.state = BottomSheetBehavior.STATE_HIDDEN
-        naverMap.setOnMapClickListener { _, _ ->
-            behavior.state = BottomSheetBehavior.STATE_COLLAPSED
-        }
 
+        naverMap.setOnMapClickListener { pointF, latLng ->
+            //Log.d("jes","mapclick")
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+
+        }
     }
 
     private val locationPermissionRequest = registerForActivityResult(
@@ -90,12 +94,9 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
     ) { permissions ->
         when {
             permissions.getOrDefault(Manifest.permission.ACCESS_FINE_LOCATION, false) -> {
-                // Fine location access granted
             }
             permissions.getOrDefault(Manifest.permission.ACCESS_COARSE_LOCATION, false) -> {
-                // Coarse location access granted
             } else -> {
-            // No location access granted
             showToastMessage("위치 권한을 허용해 주세요.")
             finish()
         }
@@ -112,19 +113,19 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
 
         binding.categoryRestaurant.setOnClickListener {
             showMarkers(RestaurantMarkerList)
-            behavior.state = BottomSheetBehavior.STATE_EXPANDED
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
         binding.categoryDessert.setOnClickListener {
             showMarkers(DessertMarkerList)
-            behavior.state = BottomSheetBehavior.STATE_EXPANDED
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
         binding.categoryBar.setOnClickListener {
             showMarkers(BarMarkerList)
-            behavior.state = BottomSheetBehavior.STATE_EXPANDED
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
         binding.categoryPartnership.setOnClickListener {
             showMarkers(PartnerMarkerList)
-            behavior.state = BottomSheetBehavior.STATE_EXPANDED
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
     }
 
@@ -148,8 +149,8 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
                 marker.setOnClickListener {
                     val markerInfo = it.tag as MarkerInfo
                     setPlaceInfo(markerInfo.placeInfo)
-                    behavior.state = BottomSheetBehavior.STATE_EXPANDED
                     naverMap.moveCamera(CameraUpdate.scrollTo(marker.position).animate(CameraAnimation.Fly))
+                    behavior.state = BottomSheetBehavior.STATE_EXPANDED
                     true
                 }
                 markers.add(marker)
