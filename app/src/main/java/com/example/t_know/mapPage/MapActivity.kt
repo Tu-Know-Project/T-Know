@@ -35,6 +35,8 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
     private lateinit var locationSource: FusedLocationSource
     private lateinit var naverMap: NaverMap
     private var markers = mutableListOf<Marker>()
+    private var intentCode: Int = 0
+    private var categoryCode: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,14 +53,45 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
         mapFragment.getMapAsync(this)
 
         locationPermissionRequest.launch(
-            arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)
+            arrayOf(
+                Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_COARSE_LOCATION
+            )
         )
 
-        selectCategory()
+        intentCode = intent.getIntExtra("intent_code", 0)
+        categoryCode = intent.getIntExtra("category_code", 0)
+
+        when(intentCode){
+            10->selectCategoryEat()
+            20->selectCategoryWhere()
+        }
+
         persistentBottomSheetEvent()
-
     }
+    private fun handleIntentData() {
+        when (intentCode) {
+            10 -> {
+                binding.categoryOne.setImageResource(R.drawable.category_restaurant_icon)
+                binding.categoryTwo.setImageResource(R.drawable.category_dessert_icon)
+                binding.categoryThree.setImageResource(R.drawable.category_bar_icon)
+                binding.categoryFour.setImageResource(R.drawable.category_partership_icon)
+            }
+            20 -> {
+                binding.categoryOne.setImageResource(R.drawable.category_amenities_icon)
+                binding.categoryTwo.setImageResource(R.drawable.category_office_icon)
+                binding.categoryThree.setImageResource(R.drawable.category_smoke_area_icon)
+                binding.categoryFour.setImageResource(R.drawable.category_other_icon)
+            }
+        }
 
+        when (categoryCode) {
+            21 -> showMarkers(FacilityMarkerList)
+            22 -> showMarkers(FacilityMarkerList)
+            23 -> showMarkers(FacilityMarkerList)
+            24 -> showMarkers(FacilityMarkerList)
+        }
+    }
     private fun persistentBottomSheetEvent() {
         behavior = BottomSheetBehavior.from(binding.bottomSheet)
         behavior.addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
@@ -88,6 +121,7 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
             behavior.state = BottomSheetBehavior.STATE_HIDDEN
 
         }
+        handleIntentData()
     }
 
     private val locationPermissionRequest = registerForActivityResult(
@@ -96,11 +130,14 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
         when {
             permissions.getOrDefault(Manifest.permission.ACCESS_FINE_LOCATION, false) -> {
             }
+
             permissions.getOrDefault(Manifest.permission.ACCESS_COARSE_LOCATION, false) -> {
-            } else -> {
-            showToastMessage("위치 권한을 허용해 주세요.")
-            finish()
-        }
+            }
+
+            else -> {
+                showToastMessage("위치 권한을 허용해 주세요.")
+                finish()
+            }
         }
     }
 
@@ -109,27 +146,46 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
         markers.clear()
     }
 
-    private fun selectCategory() {
+    private fun selectCategoryEat() {
         binding.categoryGroup.bringToFront()
 
-        binding.categoryRestaurant.setOnClickListener {
+        binding.categoryOne.setOnClickListener {
             showMarkers(RestaurantMarkerList)
             behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
-        binding.categoryDessert.setOnClickListener {
+        binding.categoryTwo.setOnClickListener {
             showMarkers(DessertMarkerList)
             behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
-        binding.categoryBar.setOnClickListener {
+        binding.categoryThree.setOnClickListener {
             showMarkers(BarMarkerList)
             behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
-        binding.categoryPartnership.setOnClickListener {
+        binding.categoryFour.setOnClickListener {
             showMarkers(PartnerMarkerList)
             behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
     }
+    private fun selectCategoryWhere() {
+        binding.categoryGroup.bringToFront()
 
+        binding.categoryOne.setOnClickListener {
+            showMarkers(FacilityMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+        }
+        binding.categoryTwo.setOnClickListener {
+            showMarkers(FacilityMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+        }
+        binding.categoryThree.setOnClickListener {
+            showMarkers(FacilityMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+        }
+        binding.categoryFour.setOnClickListener {
+            showMarkers(FacilityMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+        }
+    }
     private fun showMarkers(markerList: List<MarkerInfo>) {
         clearMarkers()
         if (markerList.isNotEmpty()) {
@@ -140,23 +196,31 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
                 marker.position = info.position
                 marker.captionText = info.caption
                 marker.map = naverMap
-                marker.icon = when(info.category) {
+                marker.icon = when (info.category) {
                     Category.RESTAURANT -> OverlayImage.fromResource(R.drawable.marker_restaurant_icon)
                     Category.DESSERT -> OverlayImage.fromResource(R.drawable.marker_dessert_icon)
                     Category.BAR -> OverlayImage.fromResource(R.drawable.markers_bar_icon)
                     Category.PARTNERSHIP -> OverlayImage.fromResource(R.drawable.markers_partnership_icon)
+                    Category.FACILITY ->OverlayImage.fromResource(R.drawable.markers_facility_icon)
+                    Category.OFFICE ->OverlayImage.fromResource(R.drawable.markers_facility_icon)
+                    Category.SMOKE_AREA ->OverlayImage.fromResource(R.drawable.markers_facility_icon)
+                    Category.OTHER ->OverlayImage.fromResource(R.drawable.markers_facility_icon)
                 }
-                marker.tag = info  // MarkerInfo를 태그로 설정
+                marker.tag = info
                 marker.setOnClickListener {
                     val markerInfo = it.tag as MarkerInfo
                     setPlaceInfo(markerInfo.placeInfo)
-                    naverMap.moveCamera(CameraUpdate.scrollTo(marker.position).animate(CameraAnimation.Fly))
+                    naverMap.moveCamera(
+                        CameraUpdate.scrollTo(marker.position).animate(CameraAnimation.Fly)
+                    )
                     behavior.state = BottomSheetBehavior.STATE_EXPANDED
                     true
                 }
                 markers.add(marker)
             }
-            naverMap.moveCamera(CameraUpdate.scrollTo(firstMarkerPosition).animate(CameraAnimation.Fly))
+            naverMap.moveCamera(
+                CameraUpdate.scrollTo(firstMarkerPosition).animate(CameraAnimation.Fly)
+            )
         }
     }
 
@@ -165,7 +229,7 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
         binding.placeSummary.text = placeInfo.summary
         binding.placeLocation.text = placeInfo.address
         binding.placeCall.text = placeInfo.phoneNumber
-        binding.placeCategory.text = placeInfo.category.toString()
+        binding.placeCategory.text = placeInfo.category
         binding.placeRecommend.text = placeInfo.recommendedMenu
         Glide.with(this).load(placeInfo.photos).into(binding.placeImage)
     }

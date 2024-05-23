@@ -28,6 +28,7 @@
                 >
 
                 <LinearLayout
+
                     android:layout_width="183dp"
                     android:layout_height="66dp"
                     android:layout_marginLeft="23dp"
@@ -445,7 +446,9 @@
                                 android:layout_weight="1"
                                 android:orientation="horizontal"
                                 android:paddingLeft="10dp"
-                                android:paddingTop="10dp">
+                                android:paddingTop="10dp"
+                                android:id="@+id/hello_lms"
+                                >
 
                                 <ImageView
                                     android:layout_width="50dp"
@@ -479,6 +482,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/tukorea_potal"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -524,6 +528,7 @@
                             android:layout_weight="1">
 
                             <LinearLayout
+                                android:id="@+id/ucheck"
                                 android:layout_width="0dp"
                                 android:layout_height="64dp"
                                 android:layout_weight="1"
@@ -563,6 +568,7 @@
                             </LinearLayout>
 
                             <LinearLayout
+                                android:id="@+id/overnight"
                                 android:layout_width="0dp"
                                 android:layout_height="50dp"
                                 android:layout_weight="1"

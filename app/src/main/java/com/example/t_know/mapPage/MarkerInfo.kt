@@ -12,7 +12,11 @@ enum class Category {
     RESTAURANT,
     DESSERT,
     BAR,
-    PARTNERSHIP
+    PARTNERSHIP,
+    FACILITY,
+    OFFICE,
+    SMOKE_AREA,
+    OTHER
 }
 
 val RestaurantMarkerList = listOf(
@@ -302,3 +306,12 @@ val PartnerMarkerList = listOf(
         placeInfo = PartnerList[29]
     )
 )
+val FacilityMarkerList = listOf(
+    MarkerInfo(
+        category = Category.PARTNERSHIP,
+        position = LatLng(37.34168681424398, 126.73234683106969),
+        caption = "Tip(기술혁신파크)",
+        placeInfo = FacilityList[0]
+    ),
+
+    )

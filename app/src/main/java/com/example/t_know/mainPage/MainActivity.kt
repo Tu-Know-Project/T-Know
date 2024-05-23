@@ -26,6 +26,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         startAutoScroll()
         updateShuttleTimes()
         likedMenu()
+        selectUsefullApp()
 
     }
     private fun getCurrentTime(): String {
@@ -142,5 +143,24 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
     fun calculateTimeDifference(startDate: Date, endDate: Date): Long {
         val difference = endDate.time - startDate.time
         return difference / (1000 * 60)
+    }
+
+    private fun selectUsefullApp(){
+        binding.helloLms.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=kr.co.imaxsoft.hellolms&pcampaignid=web_share"))
+            startActivity(intent)
+        }
+        binding.tukoreaPotal.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.kt.android.PolytechnicUniversity&pcampaignid=web_share"))
+            startActivity(intent)
+        }
+        binding.overnight.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.ww8007.AutoOvernight"))
+            startActivity(intent)
+        }
+        binding.ucheck.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.libeka.attendance.ucheckplusstud&pcampaignid=web_share"))
+            startActivity(intent)
+        }
     }
 }
