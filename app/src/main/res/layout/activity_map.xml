@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/map_layout"
     android:fitsSystemWindows="true"
     tools:context=".mapPage.MapActivity">
     <FrameLayout
@@ -62,6 +63,9 @@
         android:id="@+id/map_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:focusable="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
         android:name="com.naver.maps.map.MapFragment"/>
 
     <LinearLayout
@@ -239,6 +243,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <ImageView
+                    android:id="@+id/place_image"
                     android:layout_margin="20dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
