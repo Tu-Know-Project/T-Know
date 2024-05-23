@@ -113,6 +113,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         binding.goHomeTimesThisTimeRemain.text = "$goHomeTimesThisTimeRemain 분 전"
         binding.goHomeTimesNextTimeDeparture.text = formattedNextSchoolEndTime
         binding.goHomeTimesNextTimeRemain.text = "$goHomeTimesNextTimeRemain 분 전"
+
     }
 
     fun findClosestAndNextTime(currentTime: String, timeList: List<String>, sdf: SimpleDateFormat): Pair<String, String> {

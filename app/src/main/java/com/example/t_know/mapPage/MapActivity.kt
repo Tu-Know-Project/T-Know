@@ -3,12 +3,13 @@ package com.example.t_know.mapPage
 import BaseActivity
 import android.Manifest
 import android.os.Bundle
-import android.text.method.TextKeyListener.clear
 import android.util.Log
+import android.view.MotionEvent
 import android.view.View
+import android.view.View.OnTouchListener
 import android.widget.LinearLayout
-import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import com.bumptech.glide.Glide
 import com.example.t_know.BuildConfig
 import com.example.t_know.R
 import com.example.t_know.databinding.ActivityMapBinding
@@ -17,7 +18,6 @@ import com.naver.maps.map.CameraAnimation
 import com.naver.maps.map.CameraUpdate
 import com.naver.maps.map.LocationTrackingMode
 import com.naver.maps.map.MapFragment
-import com.naver.maps.map.MapView
 import com.naver.maps.map.NaverMap
 import com.naver.maps.map.NaverMapSdk
 import com.naver.maps.map.OnMapReadyCallback
@@ -25,17 +25,21 @@ import com.naver.maps.map.overlay.Marker
 import com.naver.maps.map.overlay.OverlayImage
 import com.naver.maps.map.util.FusedLocationSource
 
+
 class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate),
     OnMapReadyCallback {
     lateinit var behavior: BottomSheetBehavior<LinearLayout>
 
-    private val LOCATION_PERMISSTION_REQUEST_CODE: Int = 1000
+    private val LOCATION_PERMISSION_REQUEST_CODE: Int = 1000
     private lateinit var locationSource: FusedLocationSource
     private lateinit var naverMap: NaverMap
     private var markers = mutableListOf<Marker>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val API_KEY = BuildConfig.CLIENT_KEY
+
+        locationSource = FusedLocationSource(this, LOCATION_PERMISSION_REQUEST_CODE)
 
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map_fragment) as MapFragment?
             ?: MapFragment.newInstance().also {
@@ -44,11 +48,14 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
 
         NaverMapSdk.getInstance(this).client = NaverMapSdk.NaverCloudPlatformClient(API_KEY)
         mapFragment.getMapAsync(this)
-        locationPermissionRequest
-        locationSource = FusedLocationSource(this, LOCATION_PERMISSTION_REQUEST_CODE)
+
+        locationPermissionRequest.launch(
+            arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)
+        )
 
         selectCategory()
         persistentBottomSheetEvent()
+
     }
 
     private fun persistentBottomSheetEvent() {
@@ -66,15 +73,21 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
                 }
             }
         })
-
     }
 
     override fun onMapReady(naverMap: NaverMap) {
         this.naverMap = naverMap
         naverMap.locationSource = locationSource
         naverMap.locationTrackingMode = LocationTrackingMode.Follow
-    }
 
+        behavior.state = BottomSheetBehavior.STATE_HIDDEN
+
+        naverMap.setOnMapClickListener { pointF, latLng ->
+            //Log.d("jes","mapclick")
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+
+        }
+    }
 
     private val locationPermissionRequest = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
@@ -84,14 +97,38 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
             }
             permissions.getOrDefault(Manifest.permission.ACCESS_COARSE_LOCATION, false) -> {
             } else -> {
-
             showToastMessage("위치 권한을 허용해 주세요.")
             finish()
         }
         }
     }
 
-    // 눌러졌을 때 이미지 달라지게 - 무슨 탭이 눌러졌는지
+    private fun clearMarkers() {
+        markers.forEach { it.map = null }
+        markers.clear()
+    }
+
+    private fun selectCategory() {
+        binding.categoryGroup.bringToFront()
+
+        binding.categoryRestaurant.setOnClickListener {
+            showMarkers(RestaurantMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+        }
+        binding.categoryDessert.setOnClickListener {
+            showMarkers(DessertMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+        }
+        binding.categoryBar.setOnClickListener {
+            showMarkers(BarMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+        }
+        binding.categoryPartnership.setOnClickListener {
+            showMarkers(PartnerMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+        }
+    }
+
     private fun showMarkers(markerList: List<MarkerInfo>) {
         clearMarkers()
         if (markerList.isNotEmpty()) {
@@ -108,37 +145,28 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
                     Category.BAR -> OverlayImage.fromResource(R.drawable.markers_bar_icon)
                     Category.PARTNERSHIP -> OverlayImage.fromResource(R.drawable.markers_partnership_icon)
                 }
+                marker.tag = info  // MarkerInfo를 태그로 설정
+                marker.setOnClickListener {
+                    val markerInfo = it.tag as MarkerInfo
+                    setPlaceInfo(markerInfo.placeInfo)
+                    naverMap.moveCamera(CameraUpdate.scrollTo(marker.position).animate(CameraAnimation.Fly))
+                    behavior.state = BottomSheetBehavior.STATE_EXPANDED
+                    true
+                }
                 markers.add(marker)
             }
-
             naverMap.moveCamera(CameraUpdate.scrollTo(firstMarkerPosition).animate(CameraAnimation.Fly))
         }
     }
 
-    private fun clearMarkers() {
-        markers.forEach { it.map = null }
-        markers.clear()
-    }
-
-    private fun selectCategory() {
-        binding.categoryGroup.bringToFront()
-
-        binding.categoryRestaurant.setOnClickListener {
-            showMarkers(RestaurantMarkerList)
-            behavior.state = BottomSheetBehavior.STATE_EXPANDED
-        }
-        binding.categoryDessert.setOnClickListener {
-            showMarkers(DessertMarkerList)
-            behavior.state = BottomSheetBehavior.STATE_EXPANDED
-        }
-        binding.categoryBar.setOnClickListener {
-            showMarkers(BarMarkerList)
-            behavior.state = BottomSheetBehavior.STATE_EXPANDED
-        }
-        binding.categoryPartnership.setOnClickListener {
-            showMarkers(PartnerMarkerList)
-            behavior.state = BottomSheetBehavior.STATE_EXPANDED
-        }
+    private fun setPlaceInfo(placeInfo: PlaceInfo) {
+        binding.placeName.text = placeInfo.name
+        binding.placeSummary.text = placeInfo.summary
+        binding.placeLocation.text = placeInfo.address
+        binding.placeCall.text = placeInfo.phoneNumber
+        binding.placeCategory.text = placeInfo.category.toString()
+        binding.placeRecommend.text = placeInfo.recommendedMenu
+        Glide.with(this).load(placeInfo.photos).into(binding.placeImage)
     }
 
 }
