@@ -3,7 +3,6 @@ package com.example.t_know.mainPage.how.lib.use
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.t_know.mainPage.how.scholarship.off.OneOffScholarshipFragment
 
 class UseLibFragmentPagerAdapter(activity: FragmentActivity) : FragmentStateAdapter(activity) {
     private val fragments : List<Fragment>

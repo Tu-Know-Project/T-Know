@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.example.t_know.R
 import com.example.t_know.databinding.FragmentWhatMenuBinding
+import com.example.t_know.mainPage.what.call.CallMainActivity
 import com.example.t_know.mainPage.what.integrated.IntegratedMainActivity
 
 
@@ -23,7 +24,9 @@ class WhatMenuFragment : BaseFragment<FragmentWhatMenuBinding>(
             startActivity(Intent(activity, IntegratedMainActivity::class.java))
         }
 
-
+        binding.btnCallList.setOnClickListener {
+            startActivity(Intent(activity, CallMainActivity::class.java))
+        }
     }
 
 

@@ -9,7 +9,7 @@ class OffScholarshipActivity : BaseActivity<ActivityHowScholarshipOffMainBinding
     ActivityHowScholarshipOffMainBinding::inflate
 ){
     private val adapter by lazy {
-        AcademicFragmentPagerAdapter(this)
+        OffScholarshipFragmentPagerAdapter(this)
     }
 
 

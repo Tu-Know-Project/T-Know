@@ -6,8 +6,8 @@
 
     <LinearLayout
         android:layout_width="380dp"
-        android:layout_height="225dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="245dp"
+        android:layout_marginTop="44dp"
         android:layout_marginLeft="10dp"
         android:orientation="vertical">
         <TextView
@@ -18,7 +18,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="220dp"
             android:gravity="center"
             android:orientation="vertical">
             <TextView
@@ -35,7 +35,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="40dp"
                 android:text="`88.1.1. 이후 출생자로서 다자녀 가정(세자녀 이상)의 가구원인 대학생(미혼에 한함)"
                 android:textSize="12dp"/>
 

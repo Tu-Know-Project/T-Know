@@ -66,7 +66,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="265dp"
+        android:layout_height="285dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="16dp"
         android:orientation="vertical">
@@ -79,7 +79,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="260dp"
             android:orientation="vertical"
             android:gravity="center">
             <TextView
@@ -109,7 +109,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="40dp"
                 android:text=": 태블릿에 신분증 또는 카드형 학생증 태깅-> 팝업창 내 입실 버튼 클릭-> 로그 아웃 클릭"
                 android:textSize="12dp" />
             <TextView
@@ -142,7 +142,7 @@
         android:layout_width="150dp"
         android:layout_height="20dp"
         android:layout_marginLeft="147dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="105dp"
         android:orientation="horizontal">
 
         <ImageView

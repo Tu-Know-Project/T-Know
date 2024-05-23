@@ -24,6 +24,30 @@
             android:parentActivityName=".mainPage.MainActivity"
             android:theme="@style/Theme.TKnow" />
         <activity
+            android:name=".mainPage.how.enrolment.EnrolmentMainActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainPage.how.comute.ComuteActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainPage.how.comute.five.FiveComuteActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainPage.how.comute.three.ThreeComuteActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainPage.how.comute.six.SixComuteActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainPage.how.scholarship.ScholarshipMainActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".mainPage.how.scholarship.on.OnScholarshipActivity"
             android:parentActivityName=".mainPage.MainActivity"
             android:exported="false" />
@@ -36,6 +60,22 @@
             android:parentActivityName=".mainPage.MainActivity"
             android:exported="false" />
         <activity
+            android:name=".mainPage.how.lib.LibMainActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainPage.how.lib.time.TimeLibActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainPage.how.lib.use.UseLibActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainPage.how.lib.other.OtherLibActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".mainPage.what.integrated.IntegratedMainActivity"
             android:parentActivityName=".mainPage.MainActivity"
             android:exported="false" />
@@ -45,6 +85,10 @@
             android:exported="false" />
         <activity
             android:name=".mainPage.what.integrated.subsidiary.SubsidiaryActivity"
+            android:parentActivityName=".mainPage.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mainPage.what.call.CallMainActivity"
             android:parentActivityName=".mainPage.MainActivity"
             android:exported="false" />
         <activity

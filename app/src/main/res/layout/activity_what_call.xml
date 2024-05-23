@@ -3,9 +3,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_routebar"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="학교 전화번호에 대해"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="알려주세요!"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="학교 주요 전화번호에 대해 알려드릴께요!"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/main_tino_icon" />
+
+    </FrameLayout>
+
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:layout_marginTop="20dp"
         android:gravity="left|center"
         android:layout_marginLeft="10dp"
         android:text="주요 전화번호 모음"
@@ -133,23 +182,6 @@
         android:textSize="12dp" />
 
 
-
-
-
-
-    <LinearLayout
-        android:id="@+id/maingogogo"
-        android:clickable="true"
-        android:layout_width="90dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="320dp"
-        android:layout_marginTop="153dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="돌아가기"/>
-    </LinearLayout>
 
 
 </LinearLayout>

@@ -4,10 +4,11 @@ import BaseActivity
 import android.content.Intent
 import android.os.Bundle
 import com.example.t_know.databinding.ActivityHowLibMainBinding
+import com.example.t_know.mainPage.how.lib.other.OtherLibActivity
+import com.example.t_know.mainPage.how.lib.time.TimeLibActivity
 import com.example.t_know.mainPage.how.lib.use.UseLibActivity
-import com.example.t_know.mainPage.what.integrated.subsidiary.SubsidiaryActivity
 
-class LibActivity : BaseActivity<ActivityHowLibMainBinding>(
+class LibMainActivity : BaseActivity<ActivityHowLibMainBinding>(
     ActivityHowLibMainBinding::inflate) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,11 +18,11 @@ class LibActivity : BaseActivity<ActivityHowLibMainBinding>(
         }
 
         binding.other.setOnClickListener {
-            startActivity(Intent(this, SubsidiaryActivity::class.java))
+            startActivity(Intent(this, TimeLibActivity::class.java))
         }
 
         binding.use.setOnClickListener {
-            startActivity(Intent(this, SubsidiaryActivity::class.java))
+            startActivity(Intent(this, OtherLibActivity::class.java))
         }
 
     }
