@@ -152,28 +152,5 @@
         android:text="- 한 학기에 벌점 17점이 넘을 시 강제 퇴관 될 수 있습니다."
         android:textSize="12dp" />
 
-    <LinearLayout
-        android:layout_width="75dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="172dp"
-        android:layout_marginTop="43dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bg_progress_circle_now" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle" />
-
-
-    </LinearLayout>
-
-
-
 
 </LinearLayout>

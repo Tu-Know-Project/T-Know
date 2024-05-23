@@ -69,43 +69,4 @@
         android:text="- 수강신청 전에 계획서를 보고 시간표를 미리 짜 볼 수 있습니다."
         android:textSize="12dp" />
 
-
-    <LinearLayout
-        android:layout_width="220dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="96dp"
-        android:layout_marginTop="51dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bg_progress_circle"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle_now"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle"/>
-    </LinearLayout>
-
-
 </LinearLayout>
