@@ -44,7 +44,6 @@ class GalleryFragment : BaseFragment<FragmentGalleryBinding>(
             selectedImage?.let {
                 photoList.add(it.toString())
                 adapter.notifyDataSetChanged()
-                // 스크롤을 맨 끝으로 이동
                 binding.recyclerViewPhotos.smoothScrollToPosition(photoList.size - 1)
             }
         }
