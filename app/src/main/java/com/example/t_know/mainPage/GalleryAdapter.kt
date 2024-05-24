@@ -1,13 +1,18 @@
 package com.example.t_know.mainPage
+
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.t_know.R
 
-class GalleryAdapter(private val photoList: List<String>) : RecyclerView.Adapter<GalleryAdapter.PhotoViewHolder>() {
+class GalleryAdapter(private val photoList: MutableList<String>) : RecyclerView.Adapter<GalleryAdapter.PhotoViewHolder>() {
+
+    inner class PhotoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val imageView: ImageView = itemView.findViewById(R.id.image_view_photo)
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_photo, parent, false)
@@ -15,15 +20,11 @@ class GalleryAdapter(private val photoList: List<String>) : RecyclerView.Adapter
     }
 
     override fun onBindViewHolder(holder: PhotoViewHolder, position: Int) {
-        val photo = photoList[position]
-        Glide.with(holder.imageView.context)
-            .load(photo)
-            .into(holder.imageView)
+        val photoUri = Uri.parse(photoList[position])
+        holder.imageView.setImageURI(photoUri)
     }
 
-    override fun getItemCount(): Int = photoList.size
-
-    class PhotoViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val imageView: ImageView = view.findViewById(R.id.image_view_photo)
+    override fun getItemCount(): Int {
+        return photoList.size
     }
 }

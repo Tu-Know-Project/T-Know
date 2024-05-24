@@ -7,12 +7,9 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
-
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.t_know.R
 import com.example.t_know.databinding.FragmentGalleryBinding
-
 
 class GalleryFragment : BaseFragment<FragmentGalleryBinding>(
     R.layout.fragment_gallery,
@@ -21,7 +18,6 @@ class GalleryFragment : BaseFragment<FragmentGalleryBinding>(
 
     private lateinit var photoList: MutableList<String>
     private lateinit var adapter: GalleryAdapter
-    private lateinit var recyclerView: RecyclerView
     private val PICK_IMAGE = 1
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -32,7 +28,7 @@ class GalleryFragment : BaseFragment<FragmentGalleryBinding>(
 
         binding.recyclerViewPhotos.apply {
             layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-            adapter = adapter
+            adapter = this@GalleryFragment.adapter
         }
 
         binding.buttonAddPhoto.setOnClickListener {
@@ -48,8 +44,9 @@ class GalleryFragment : BaseFragment<FragmentGalleryBinding>(
             selectedImage?.let {
                 photoList.add(it.toString())
                 adapter.notifyDataSetChanged()
+                // 스크롤을 맨 끝으로 이동
+                binding.recyclerViewPhotos.smoothScrollToPosition(photoList.size - 1)
             }
         }
     }
-
 }
