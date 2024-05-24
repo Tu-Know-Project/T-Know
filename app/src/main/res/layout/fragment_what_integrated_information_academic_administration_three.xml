@@ -61,44 +61,5 @@
         android:text="- 수업만족도 평가를 마친 후 교수님이 성적을 올렸는지 확인할 수 있는 페이지입니다."
         android:textSize="12dp" />
 
-    <LinearLayout
-        android:layout_width="220dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="96dp"
-        android:layout_marginTop="57dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bg_progress_circle"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle_now"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle"/>
-    </LinearLayout>
-
-
-
 
 </LinearLayout>
