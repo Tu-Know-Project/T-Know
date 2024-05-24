@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.example.t_know.databinding.ActivityHowScholarshipOffMainBinding
 import com.example.t_know.databinding.ActivityHowScholarshipStateMainBinding
 import com.example.t_know.mainPage.what.integrated.academic.AcademicFragmentPagerAdapter
+import com.google.android.material.tabs.TabLayoutMediator
 
 class StateScholarshipActivity : BaseActivity<ActivityHowScholarshipStateMainBinding>(
     ActivityHowScholarshipStateMainBinding::inflate
@@ -22,6 +23,8 @@ class StateScholarshipActivity : BaseActivity<ActivityHowScholarshipStateMainBin
     private fun initTab() {
         with(binding) {
             stateScholarshipPager.adapter = adapter
+            TabLayoutMediator(binding.useTabLayout, binding.stateScholarshipPager){tab, positon ->
+            }.attach()
         }
     }
 }

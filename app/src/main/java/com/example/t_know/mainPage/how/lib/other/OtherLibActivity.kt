@@ -4,6 +4,7 @@ import BaseActivity
 import android.os.Bundle
 import com.example.t_know.databinding.ActivityHowLibOtherMainBinding
 import com.example.t_know.mainPage.how.lib.use.UseLibFragmentPagerAdapter
+import com.google.android.material.tabs.TabLayoutMediator
 
 
 class OtherLibActivity : BaseActivity<ActivityHowLibOtherMainBinding>(
@@ -22,6 +23,8 @@ class OtherLibActivity : BaseActivity<ActivityHowLibOtherMainBinding>(
     private fun initTab() {
         with(binding) {
             otherLibPager.adapter = adapter
+            TabLayoutMediator(binding.useTabLayout, binding.otherLibPager){tab, positon ->
+            }.attach()
         }
     }
 }

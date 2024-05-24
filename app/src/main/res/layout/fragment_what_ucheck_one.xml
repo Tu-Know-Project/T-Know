@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:gravity="center"
-                android:text="비교과 신청 방법에 대해"
+                android:text="U-Check는 어떻게 사용하나요?"
                 android:textSize="25dp" />
 
 
@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="비교과 신청 방법에 대해 알려드릴께요"
+                android:text="출석하는 방법에 대해 알려드릴께요"
                 android:textSize="12dp" />
 
         </LinearLayout>
@@ -45,49 +45,24 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="380dp"
+        android:layout_height="475dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1. 비교과 관리 -> 프로그램 신청 클릭"
+            android:layout_width="300dp"
+            android:layout_height="25dp"
+            android:text="1. 한국공학대학교 선택 후 확인"
             android:textSize="20dp"
             android:textStyle="bold"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/what_extra_list"
+            android:src="@drawable/what_ucheck_choose"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"/>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="150dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="147dp"
-        android:layout_marginTop="70dp"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bg_progress_circle_now"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:src="@drawable/bg_progress_circle"/>
-
-    </LinearLayout>
 </LinearLayout>
