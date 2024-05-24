@@ -438,3 +438,15 @@ val PartnerList = listOf(
         photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240208_37%2F1707396048987qsrVz_JPEG%2FKakaoTalk_20240208_214010471_04.jpg"
     ),
     )
+
+val FacilityList = listOf(
+    PlaceInfo(
+        name = "Tip(기술혁신파크)",
+        summary = "제 1기숙사, 여러 편의시설이 있다.",
+        address = "시흥시 산기대학로 237 Tip",
+        phoneNumber = "031-8041-0100",
+        category = "기숙사, 라운지, 편의시설",
+        recommendedMenu = "--",
+        photos = "https://i.namu.wiki/i/4JwTTddYCPmbsPLI9eSXpSLquSuu_-_5Q0jeFm21FGAFJllcBeEW6qEY25fXA2UP4hwd61d4CNzwoNOpjplo0w.webp"
+    ),
+    )

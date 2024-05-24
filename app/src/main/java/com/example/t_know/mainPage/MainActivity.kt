@@ -4,12 +4,17 @@ import BaseActivity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import androidx.core.content.ContextCompat.startActivity
 import androidx.lifecycle.lifecycleScope
+import com.bumptech.glide.Glide
 import com.example.t_know.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -26,8 +31,54 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         startAutoScroll()
         updateShuttleTimes()
         likedMenu()
-
+        selectUsefullApp()
+        moveTobiNyang()
     }
+    private fun moveTobiNyang() {
+        binding.tobicat.bringToFront()
+        Glide.with(this).load("https://icon-library.com/images/cat-icon-gif/cat-icon-gif-1.jpg").into(binding.tobicat)
+        val location = CoroutineScope(Dispatchers.Default)
+        val startX = binding.tobicat.x
+        val startY = binding.tobicat.y
+        var rotate = true
+        binding.tobicat.scaleX = -1f
+        location.launch {
+            while (true) {
+                withContext(Dispatchers.Main) {
+                    if (rotate) {
+
+                        binding.tobicat.x += 1
+                        if (binding.tobicat.x >= binding.root.width - binding.tobicat.width) {
+                            binding.tobicat.x = (binding.root.width - binding.tobicat.width).toFloat()
+                            binding.tobicat.scaleX = 1f
+                            binding.tobicat.y = binding.tobicat.y + 20
+                            rotate = false
+                        }
+                    } else {
+                        binding.tobicat.x -= 1
+                        if (binding.tobicat.x <= 0) {
+
+                            binding.tobicat.x = 0f
+                            binding.tobicat.scaleX = -1f
+                            binding.tobicat.y = binding.tobicat.y + 20
+                            rotate = true
+                        }
+                    }
+
+                    if (binding.tobicat.y > binding.root.height - binding.tobicat.height) {
+                        binding.tobicat.x = startX
+                        binding.tobicat.y = startY
+                    }
+                }
+                delay(1)
+            }
+        }
+        binding.tobicat.setOnClickListener{
+            val intent = Intent(this,TobiNyangActivity::class.java)
+            startActivity(intent)
+        }
+
+}
     private fun getCurrentTime(): String {
         val sdf = SimpleDateFormat("HH:mm", Locale.getDefault())
         return sdf.format(Date())
@@ -142,5 +193,24 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
     fun calculateTimeDifference(startDate: Date, endDate: Date): Long {
         val difference = endDate.time - startDate.time
         return difference / (1000 * 60)
+    }
+
+    private fun selectUsefullApp(){
+        binding.helloLms.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=kr.co.imaxsoft.hellolms&pcampaignid=web_share"))
+            startActivity(intent)
+        }
+        binding.tukoreaPotal.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.kt.android.PolytechnicUniversity&pcampaignid=web_share"))
+            startActivity(intent)
+        }
+        binding.overnight.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.ww8007.AutoOvernight"))
+            startActivity(intent)
+        }
+        binding.ucheck.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.libeka.attendance.ucheckplusstud&pcampaignid=web_share"))
+            startActivity(intent)
+        }
     }
 }

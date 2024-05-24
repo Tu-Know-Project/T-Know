@@ -27,7 +27,7 @@
                 android:layout_height="38dp"
                 android:layout_marginRight="22dp"
                 android:background="@drawable/round_category_btn"
-                android:id="@+id/category_restaurant"
+                android:id="@+id/category_one"
                 android:src="@drawable/category_restaurant_icon"
                 />
             <ImageView
@@ -36,7 +36,7 @@
                 android:layout_height="38dp"
                 android:layout_marginRight="22dp"
                 android:background="@drawable/round_category_btn"
-                android:id="@+id/category_dessert"
+                android:id="@+id/category_two"
                 android:src="@drawable/category_dessert_icon"
                 />
             <ImageView
@@ -45,7 +45,7 @@
                 android:layout_height="38dp"
                 android:layout_marginRight="22dp"
                 android:background="@drawable/round_category_btn"
-                android:id="@+id/category_bar"
+                android:id="@+id/category_three"
                 android:src="@drawable/category_bar_icon"
                 />
             <ImageView
@@ -53,7 +53,7 @@
                 android:layout_weight="1"
                 android:layout_height="38dp"
                 android:background="@drawable/round_category_btn"
-                android:id="@+id/category_partnership"
+                android:id="@+id/category_four"
                 android:src="@drawable/category_partership_icon"
                 />
         </LinearLayout>

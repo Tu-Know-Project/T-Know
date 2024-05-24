@@ -14,9 +14,11 @@ class EatMenuFragment : BaseFragment<FragmentEatMenuBinding>(
 ) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btnMap.setOnClickListener{
+        binding.btnMap.setOnClickListener {
             val intent = Intent(activity, MapActivity::class.java)
+            intent.putExtra("intent_code", 10)
             startActivity(intent)
         }
+
     }
 }

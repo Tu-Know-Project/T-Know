@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,9 +16,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TKnow"
         tools:targetApi="31">
+        <activity
+            android:name=".mainPage.TobiNyangActivity"
+            android:exported="false" />
+
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
-            android:value="YOUR_CLIENT_ID_HERE"/>
+            android:value="YOUR_CLIENT_ID_HERE" />
+
         <activity
             android:name=".mapPage.MapActivity"
             android:exported="false"
@@ -25,78 +32,79 @@
             android:theme="@style/Theme.TKnow" />
         <activity
             android:name=".mainPage.how.enrolment.EnrolmentMainActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.how.comute.ComuteActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.how.comute.five.FiveComuteActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.how.comute.three.ThreeComuteActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.how.comute.six.SixComuteActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.how.scholarship.ScholarshipMainActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.how.scholarship.on.OnScholarshipActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.how.scholarship.off.OffScholarshipActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.how.scholarship.state.StateScholarshipActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.how.lib.LibMainActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.how.lib.time.TimeLibActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.how.lib.use.UseLibActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.how.lib.other.OtherLibActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.what.integrated.IntegratedMainActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.what.integrated.academic.AcademicActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.what.integrated.subsidiary.SubsidiaryActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.what.call.CallMainActivity"
-            android:parentActivityName=".mainPage.MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".mainPage.MainActivity" />
         <activity
             android:name=".mainPage.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
