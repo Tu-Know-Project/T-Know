@@ -108,6 +108,10 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ibook.kpu.ac.kr/Viewer/menu01"))
             startActivity(intent)
         }
+        binding.menuSandol.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://pf.kakao.com/_pRxlZxb"))
+            startActivity(intent)
+        }
     }
 
     private fun startAutoScroll() {

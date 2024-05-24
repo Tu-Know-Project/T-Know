@@ -156,18 +156,22 @@
                         <TextView
                             android:id="@+id/menu_tip"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="20dp"
                             android:layout_marginLeft="10dp"
                             android:text="메뉴 보기"
                             android:textSize="10dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:text="세미콘 / 미가 / 수호식당"
+                            android:textSize="12dp" />
 
                         <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="center|right"
-                            android:text="이번 차"
-                            android:textAlignment="center"
+                            android:id="@+id/menu_sandol"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="산돌이로 이동"
                             android:textSize="10dp" />
                     </LinearLayout>
 
@@ -192,7 +196,6 @@
                             android:layout_marginLeft="10dp"
                             android:text="메뉴 보기"
                             android:textSize="10dp"
-
                             />
                     </LinearLayout>
                 </LinearLayout>
