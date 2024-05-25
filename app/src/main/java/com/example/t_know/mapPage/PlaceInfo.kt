@@ -450,3 +450,24 @@ val FacilityList = listOf(
         photos = "https://i.namu.wiki/i/4JwTTddYCPmbsPLI9eSXpSLquSuu_-_5Q0jeFm21FGAFJllcBeEW6qEY25fXA2UP4hwd61d4CNzwoNOpjplo0w.webp"
     ),
     )
+val OfficeList = listOf(
+    PlaceInfo(
+        name = "",
+        summary = "",
+        address = "",
+        phoneNumber = "",
+        category = "",
+        recommendedMenu = "",
+        photos = ""
+    ),
+)
+val SmokeAreaList =  listOf(
+    PlaceInfo(
+        name = "",
+        summary = "",
+        address = "",
+        phoneNumber = "",
+        category = "",
+        recommendedMenu = "",
+        photos = ""
+    ),)
