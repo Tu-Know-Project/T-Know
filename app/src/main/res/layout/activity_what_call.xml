@@ -60,15 +60,29 @@
         android:text="주요 전화번호 모음"
         android:textSize="24dp"
         android:textStyle="bold"/>
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:gravity="left|center"
-        android:layout_marginLeft="30dp"
-        android:text="학사팀 : 031-8041-0022 ~ 0026  "
-        android:textSize="16dp"
-        android:textStyle="bold"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:layout_marginLeft="30dp"
+            android:text="학사팀 : 031-8041-0022 ~ 0026  "
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/school_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/what_call"/>
+    </LinearLayout>
+
+
 
     <TextView
         android:layout_width="match_parent"
@@ -78,14 +92,27 @@
         android:text="- 학사 관련 업무를 담당합니다."
         android:textSize="12dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:text="학생지원팀 : 031-8041-0092 ~ 0094  "
-        android:textSize="16dp"
-        android:textStyle="bold"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="학생지원팀 : 031-8041-0092 ~ 0094  "
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/student_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/what_call"/>
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -97,14 +124,27 @@
 
 
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:text="학생생활복지팀 : 031-8041-0082 ~ 0083  "
-        android:textSize="16dp"
-        android:textStyle="bold"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="학생생활복지팀 : 031-8041-0082 ~ 0083  "
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/domitory_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/what_call"/>
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -114,14 +154,27 @@
         android:text="- 기숙사 학생들의 요청사항을 지원하는 업무를 담당합니다."
         android:textSize="12dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:text="시설안전팀 : 031-8041-0162 ~ 0168 "
-        android:textSize="16dp"
-        android:textStyle="bold"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="시설안전팀 : 031-8041-0162 ~ 0168 "
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/facility_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/what_call"/>
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -132,14 +185,27 @@
         android:textSize="12dp" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:text="진로취업지원팀 : 031-8041-0122 ~ 0123 "
-        android:textSize="16dp"
-        android:textStyle="bold"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="진로취업지원팀 : 031-8041-0122 ~ 0123 "
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/carrer_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/what_call"/>
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -148,14 +214,28 @@
         android:layout_marginLeft="45dp"
         android:text="- 학생들의 진로와 취업을 지원하는 업무를 담당합니다."
         android:textSize="12dp" />
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:text="현장실습지원센터 : 031-8041-0854 ~ 0856  "
-        android:textSize="16dp"
-        android:textStyle="bold"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="현장실습지원센터 : 031-8041-0854 ~ 0856  "
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/practice_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/what_call"/>
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -164,14 +244,28 @@
         android:layout_marginLeft="45dp"
         android:text="- 학생들의 현장실습을 제공하는 업무를 담당합니다."
         android:textSize="12dp" />
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
-        android:text="도서관 : 031-8041-0772 ~ 0774, 0780 ~ 0872"
-        android:textSize="16dp"
-        android:textStyle="bold"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="도서관 : 031-8041-0772 ~ 0774, 0780 ~ 0872  "
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/lib_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/what_call"/>
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
