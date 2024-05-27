@@ -1,9 +1,11 @@
 package com.example.t_know.mainPage.what.call
 
 import BaseActivity
+import android.Manifest
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.t_know.databinding.ActivityWhatCallBinding
 
 class CallMainActivity : BaseActivity<ActivityWhatCallBinding>(
@@ -12,6 +14,26 @@ class CallMainActivity : BaseActivity<ActivityWhatCallBinding>(
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         callClick()
+        phonePermissionRequest.launch(
+            arrayOf(
+                Manifest.permission.CALL_PHONE,
+            )
+        )
+    }
+
+    private val phonePermissionRequest = registerForActivityResult(
+        ActivityResultContracts.RequestMultiplePermissions()
+    ) { permissions ->
+        when {
+            permissions.getOrDefault(Manifest.permission.CALL_PHONE, false) -> {
+
+            }
+
+            else -> {
+                showToastMessage("전화 권한을 허용해 주세요.")
+                finish()
+            }
+        }
     }
 
     private fun callClick(){
