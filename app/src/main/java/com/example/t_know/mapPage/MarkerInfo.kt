@@ -192,7 +192,7 @@ val BarMarkerList = listOf(
     ),
     MarkerInfo(
         category = Category.BAR,
-        position = LatLng(37.3440773, 126.7356254),
+        position = LatLng(37.34411096497163, 126.73552356254751),
         caption = "27%",
         placeInfo = BarList[2]
     ),

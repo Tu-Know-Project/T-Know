@@ -106,11 +106,11 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
     private fun likedMenu(){
 
         binding.menuE.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ibook.kpu.ac.kr/Viewer/menu02"))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ibook.kpu.ac.kr/Viewer/menu01"))
             startActivity(intent)
         }
         binding.menuTip.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ibook.kpu.ac.kr/Viewer/menu01"))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ibook.kpu.ac.kr/Viewer/menu02"))
             startActivity(intent)
         }
         binding.menuSandol.setOnClickListener {
@@ -122,7 +122,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
     private fun startAutoScroll() {
         lifecycleScope.launch {
             while (isActive) {
-                delay(5000)
+                delay(8000)
                 val currentPage = binding.fragmentContainer.currentItem
                 val totalPages = binding.fragmentContainer.adapter?.itemCount ?: 0
                 if (totalPages > 0) {
