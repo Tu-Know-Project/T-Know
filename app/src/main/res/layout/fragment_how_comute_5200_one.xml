@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:gravity="center"
-                android:text="3400번 버스는 신도림으로 가요!"
+                android:text="5200번 버스는 신도림으로 가요!"
                 android:textSize="12dp" />
 
         </LinearLayout>

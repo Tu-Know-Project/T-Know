@@ -14,27 +14,8 @@ class CallMainActivity : BaseActivity<ActivityWhatCallBinding>(
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         callClick()
-        phonePermissionRequest.launch(
-            arrayOf(
-                Manifest.permission.CALL_PHONE,
-            )
-        )
     }
 
-    private val phonePermissionRequest = registerForActivityResult(
-        ActivityResultContracts.RequestMultiplePermissions()
-    ) { permissions ->
-        when {
-            permissions.getOrDefault(Manifest.permission.CALL_PHONE, false) -> {
-
-            }
-
-            else -> {
-                showToastMessage("전화 권한을 허용해 주세요.")
-                finish()
-            }
-        }
-    }
 
     private fun callClick(){
         binding.carrerCall.setOnClickListener {
