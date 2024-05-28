@@ -174,10 +174,11 @@
                 android:layout_height="17.5dp"
                 android:text="수강 철회란 수강 정정기간 후에 삭제만 가능한 기간."
                 android:textSize="12dp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="17.5dp"
-                android:text="첫쨋날 - 학번 끝자리 홀수, 둘쨋날 - 학번 끝자리 짝수, 셋쨋날 - 전체 학생"
+                android:text="첫째날 - 학번 끝자리 홀수, 둘째날 - 학번 끝자리 짝수, 셋째날 - 전체 학생"
                 android:textSize="12dp" />
 
         </LinearLayout>

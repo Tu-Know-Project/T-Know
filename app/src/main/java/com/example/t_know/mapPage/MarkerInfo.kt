@@ -484,7 +484,7 @@ val OfficeMarkerList = listOf(
     ),
     MarkerInfo(
         category = Category.OFFICE,
-        position = LatLng(37.33969020867472, 126.73498046505951),
+        position = LatLng(37.33973729736772, 126.73488437832579),
         caption = "게임공학과 학과사무실",
         placeInfo = OfficeList[1]
     ),
@@ -502,7 +502,7 @@ val OfficeMarkerList = listOf(
     ),
     MarkerInfo(
         category = Category.OFFICE,
-        position = LatLng(37.3396837349094, 126.73410309090019),
+        position = LatLng(37.339604686306316, 126.73401026968389),
         caption = "신소재공학과 학과사무실",
         placeInfo = OfficeList[4]
     ),
@@ -520,7 +520,7 @@ val OfficeMarkerList = listOf(
     ),
     MarkerInfo(
         category = Category.OFFICE,
-        position = LatLng(37.3403171129712, 126.73328269963326),
+        position = LatLng(37.3401635195259, 126.73309704162912),
         caption = "기계설계공학과 학과사무실",
         placeInfo = OfficeList[7]
     ),
@@ -532,7 +532,7 @@ val OfficeMarkerList = listOf(
     ),
     MarkerInfo(
         category = Category.OFFICE,
-        position = LatLng(37.340383658286136, 126.73282542374629),
+        position = LatLng(37.34053502506656, 126.73302237459244),
         caption = "디자인공학부 학과사무실",
         placeInfo = OfficeList[9]
     ),
