@@ -67,6 +67,7 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
         when(intentCode){
             10->selectCategoryEat()
             20->selectCategoryWhere()
+            30->selectCategoryScool()
         }
 
         persistentBottomSheetEvent()
@@ -87,6 +88,13 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
                 binding.categoryThree.setImageResource(R.drawable.category_smoke_area_icon)
                 binding.categoryFour.setImageResource(R.drawable.category_other_icon)
             }
+            30 -> {
+                binding.categoryOne.visibility = View.GONE
+                binding.categoryTwo.setImageResource(R.drawable.category_inrestaurant_icon)
+                binding.categoryThree.setImageResource(R.drawable.category_incafe_icon)
+                binding.categoryFour.visibility = View.GONE
+            }
+
         }
 
         when (categoryCode) {
@@ -94,6 +102,10 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
             22 -> showMarkers(OfficeMarkerList)
             23 -> showMarkers(SmokeMarkerList)
             24 -> showMarkers(OtherMarkerList)
+        }
+        when (categoryCode) {
+            31 -> showMarkers(InRestaurantMarkerList)
+            32 -> showMarkers(InCafeMarkerList)
         }
     }
     private fun persistentBottomSheetEvent() {
@@ -193,22 +205,15 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
     private fun selectCategoryScool() {
         binding.categoryGroup.bringToFront()
 
-        binding.categoryOne.setOnClickListener {
-            showMarkers(FacilityMarkerList)
-            behavior.state = BottomSheetBehavior.STATE_HIDDEN
-        }
         binding.categoryTwo.setOnClickListener {
-            showMarkers(OfficeMarkerList)
+            showMarkers(InRestaurantMarkerList)
             behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
         binding.categoryThree.setOnClickListener {
-            showMarkers(SmokeMarkerList)
+            showMarkers(InCafeMarkerList)
             behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
-        binding.categoryFour.setOnClickListener {
-            showMarkers(OtherMarkerList)
-            behavior.state = BottomSheetBehavior.STATE_HIDDEN
-        }
+
     }
     private fun showMarkers(markerList: List<MarkerInfo>) {
         clearMarkers()
@@ -229,6 +234,8 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
                     Category.OFFICE ->OverlayImage.fromResource(R.drawable.markers_office_icon)
                     Category.SMOKE_AREA ->OverlayImage.fromResource(R.drawable.markers_smoking_area_icon)
                     Category.OTHER ->OverlayImage.fromResource(R.drawable.markers_other_icon)
+                    Category.INCAFE ->OverlayImage.fromResource(R.drawable.marker_in_cafe_icon)
+                    Category.INRESTAURANT ->OverlayImage.fromResource(R.drawable.marker_inrestaurant_icon)
                 }
                 marker.tag = info
                 marker.setOnClickListener {

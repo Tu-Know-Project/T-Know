@@ -20,5 +20,18 @@ class EatMenuFragment : BaseFragment<FragmentEatMenuBinding>(
             startActivity(intent)
         }
 
+        binding.btnSchoolFood.setOnClickListener {
+            val intent = Intent(activity, MapActivity::class.java)
+            intent.putExtra("intent_code", 30)
+            intent.putExtra("category_code", 31)
+            startActivity(intent)
+        }
+        binding.btnCafe.setOnClickListener {
+            val intent = Intent(activity, MapActivity::class.java)
+            intent.putExtra("intent_code", 30)
+            intent.putExtra("category_code", 32)
+            startActivity(intent)
+        }
+
     }
 }
