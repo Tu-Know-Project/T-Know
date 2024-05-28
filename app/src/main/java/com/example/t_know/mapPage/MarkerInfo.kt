@@ -16,7 +16,9 @@ enum class Category {
     FACILITY,
     OFFICE,
     SMOKE_AREA,
-    OTHER
+    OTHER,
+    INCAFE,
+    INRESTAURANT,
 }
 
 val RestaurantMarkerList = listOf(
@@ -213,7 +215,7 @@ val BarMarkerList = listOf(
 val PartnerMarkerList = listOf(
     MarkerInfo(
         category = Category.PARTNERSHIP,
-        position = LatLng(37.346330898623854, 126.73402886674774),
+        position = LatLng(37.34322377298429, 126.73466052126332),
         caption = "로산진",
         placeInfo = PartnerList[0]
     ),
@@ -426,51 +428,63 @@ val FacilityMarkerList = listOf(
     ),
     MarkerInfo(
         category = Category.FACILITY,
+        position = LatLng(37.34181732815611, 126.73228712075634 ),
+        caption = "Tip 2층 스터디 라운지",
+        placeInfo = FacilityList[5]
+    ),
+    MarkerInfo(
+        category = Category.FACILITY,
         position = LatLng(37.341848550965665, 126.73214876657744),
         caption = "Tip 2층 라운지",
-        placeInfo = FacilityList[5]
+        placeInfo = FacilityList[6]
     ),
     MarkerInfo(
         category = Category.FACILITY,
         position = LatLng(37.341805484162755, 126.7320304253057),
         caption = "Tip 3층 라운지",
-        placeInfo = FacilityList[6]
+        placeInfo = FacilityList[7]
     ),
     MarkerInfo(
         category = Category.FACILITY,
         position = LatLng(37.34107303463666, 126.73286530058431),
         caption = "제2기숙사 1층 라운지",
-        placeInfo = FacilityList[7]
+        placeInfo = FacilityList[8]
     ),
     MarkerInfo(
         category = Category.FACILITY,
         position = LatLng(37.341194487647876, 126.7327830536145),
         caption = "제2기숙사 2층 라운지",
-        placeInfo = FacilityList[8]
+        placeInfo = FacilityList[9]
     ),
     MarkerInfo(
         category = Category.FACILITY,
         position = LatLng(37.34069517515805, 126.73411927381368),
-        caption = "종합교육관 라운지 채움, 나눔",
-        placeInfo = FacilityList[9]
+        caption = "종합교육관 라운지 채움",
+        placeInfo = FacilityList[10]
+    ),
+    MarkerInfo(
+        category = Category.FACILITY,
+        position = LatLng(37.34048855507426, 126.7343936626883 ),
+        caption = "종합교육관 라운지 나눔",
+        placeInfo = FacilityList[11]
     ),
     MarkerInfo(
         category = Category.FACILITY,
         position = LatLng(37.34040964565605, 126.73336136709445),
         caption = "B동 라운지 배움",
-        placeInfo = FacilityList[10]
+        placeInfo = FacilityList[12]
     ),
     MarkerInfo(
         category = Category.FACILITY,
         position = LatLng(37.339823564317484, 126.73417877080436),
         caption = "D동 라운지 다룸",
-        placeInfo = FacilityList[11]
+        placeInfo = FacilityList[13]
     ),
     MarkerInfo(
         category = Category.FACILITY,
         position = LatLng(37.33961377354453, 126.73504844265928),
         caption = "E동 라운지 이룸",
-        placeInfo = FacilityList[11]
+        placeInfo = FacilityList[14]
     ),
 
     )
@@ -643,4 +657,123 @@ val OtherMarkerList = listOf(
         caption = "증명서 발급기",
         placeInfo = OtherAreaList[8]
     ),
+)
+val InCafeMarkerList= listOf(
+    MarkerInfo(
+        category = Category.INCAFE,
+        position = LatLng(37.34190311020989, 126.73236863379886),
+        caption = "카페아이엔지",
+        placeInfo = InCafeList[0]
+    ),
+    MarkerInfo(
+        category = Category.INCAFE,
+        position = LatLng(37.34199518391823, 126.73224416993352),
+        caption = "쥬씨",
+        placeInfo = InCafeList[1]
+    ),
+    MarkerInfo(
+        category = Category.INCAFE,
+        position = LatLng(126.73224416993352, 126.73217238466444),
+        caption = "토스피아",
+        placeInfo = InCafeList[2]
+    ),
+    MarkerInfo(
+        category = Category.INCAFE,
+        position = LatLng(37.3406389374404, 126.73415332704134),
+        caption = "스터디카페",
+        placeInfo = InCafeList[3]
+    ),
+    MarkerInfo(
+        category = Category.INCAFE,
+        position = LatLng(37.338787269774066, 126.73412882066724),
+        caption = "일리 카페",
+        placeInfo = InCafeList[4]
+    ),
+    MarkerInfo(
+        category = Category.INCAFE,
+        position = LatLng(37.33893590064181, 126.73713567890451 ),
+        caption = "블루포트 경과기대점",
+        placeInfo = InCafeList[5]
+    ),
+)
+val InRestaurantMarkerList= listOf(
+    MarkerInfo(
+        category = Category.INRESTAURANT,
+        position = LatLng(37.339638981090495, 126.73524019640753),
+        caption = "E동 레스토랑",
+        placeInfo = InRestaurantList[0]
+    ),
+    MarkerInfo(
+        category = Category.INRESTAURANT,
+        position = LatLng(37.341670394998026, 126.73205911815944),
+        caption = "수호 식당",
+        placeInfo = InRestaurantList[1]
+    ),
+    MarkerInfo(
+        category = Category.INRESTAURANT,
+        position = LatLng(37.34174256608055, 126.73209835979468),
+        caption = "버텍스",
+        placeInfo = InRestaurantList[2]
+    ),
+    MarkerInfo(
+        category = Category.INRESTAURANT,
+        position = LatLng(37.3417422976974, 37.3417422976974),
+        caption = "학생 식당 가가",
+        placeInfo = InRestaurantList[3]
+    ),
+    MarkerInfo(
+        category = Category.INRESTAURANT,
+        position = LatLng(37.341877834129185, 126.73214866257516),
+        caption = "올리브그린",
+        placeInfo = InRestaurantList[4]
+    ),
+    MarkerInfo(
+        category = Category.INRESTAURANT,
+        position = LatLng(37.34063670390672, 126.73416179865688),
+        caption = "라온 식당",
+        placeInfo = InRestaurantList[5]
+    ),
+    MarkerInfo(
+        category = Category.INRESTAURANT,
+        position = LatLng(37.33893992325337, 126.73389694547488),
+        caption = "토마토 도시락",
+        placeInfo = InRestaurantList[6]
+    ),
+    MarkerInfo(
+        category = Category.INRESTAURANT,
+        position = LatLng(37.33897607195457, 126.73394477809227),
+        caption = "나드리 김밥",
+        placeInfo = InRestaurantList[7]
+    ),
+    MarkerInfo(
+        category = Category.INRESTAURANT,
+        position = LatLng(37.33900315967958, 126.7339700732202),
+        caption = "OG 버거",
+        placeInfo = InRestaurantList[8]
+    ),
+    MarkerInfo(
+        category = Category.INRESTAURANT,
+        position = LatLng(37.34170211598326, 126.7321408227929),
+        caption = "신북경",
+        placeInfo = InRestaurantList[9]
+    ),
+    MarkerInfo(
+        category = Category.INRESTAURANT,
+        position = LatLng(37.34176498297421, 126.73205031824044),
+        caption = "하나비",
+        placeInfo = InRestaurantList[10]
+    ),
+    MarkerInfo(
+        category = Category.INRESTAURANT,
+        position = LatLng(37.34171328291649, 126.73209846381602),
+        caption = "한스오믈렛",
+        placeInfo = InRestaurantList[11]
+    ),
+    MarkerInfo(
+        category = Category.INRESTAURANT,
+        position = LatLng(37.3416594388651, 126.73219457879661),
+        caption = "맘스터치",
+        placeInfo = InRestaurantList[12]
+    ),
+
 )
