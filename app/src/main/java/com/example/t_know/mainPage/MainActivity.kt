@@ -1,12 +1,14 @@
 package com.example.t_know.mainPage
 
 import BaseActivity
+import android.app.Dialog
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.core.content.ContextCompat.startActivity
 import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
+import com.example.t_know.R
 import com.example.t_know.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.coroutines.CoroutineScope
@@ -16,6 +18,7 @@ import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.text.SimpleDateFormat
+import java.util.Calendar
 import java.util.Date
 import java.util.Locale
 import java.util.concurrent.TimeUnit
@@ -33,6 +36,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         likedMenu()
         selectUsefullApp()
         moveTobiNyang()
+        setTako()
     }
     private fun moveTobiNyang() {
         binding.tobicat.bringToFront()
@@ -217,4 +221,18 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
             startActivity(intent)
         }
     }
+    private fun setTako() {
+        val today = Calendar.getInstance().get(Calendar.DAY_OF_WEEK)
+        if (today == Calendar.TUESDAY) {
+            binding.menuTako.text = "오늘은 타코야끼 오는 날~"
+        } else {
+            binding.menuTako.text = "타코야끼는 화요일"
+        }
+
+        binding.menuTako.setOnClickListener {
+            val dialog = TakoDialogFragment()
+            dialog.show(supportFragmentManager, "TakoDialogFragment")
+        }
+    }
+
 }

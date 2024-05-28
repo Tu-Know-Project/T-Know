@@ -161,6 +161,7 @@ val DessertMarkerList = listOf(
         caption = "하이샌드",
         placeInfo = DessertList[7]
     ),
+
     MarkerInfo(
         category = Category.DESSERT,
         position = LatLng(37.34320401867642, 126.73489194094553),
@@ -173,6 +174,7 @@ val DessertMarkerList = listOf(
         caption = "쁘숑베이커리",
         placeInfo = DessertList[9]
     ),
+
 )
 
 val BarMarkerList = listOf(

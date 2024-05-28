@@ -192,11 +192,24 @@
                         <TextView
                             android:id="@+id/menu_e"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="20dp"
                             android:layout_marginLeft="10dp"
                             android:text="메뉴 보기"
                             android:textSize="10dp"
                             />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:text="타코야끼"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/menu_tako"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="오늘은 타코야끼 오는 날~"
+                            android:textSize="10dp" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
