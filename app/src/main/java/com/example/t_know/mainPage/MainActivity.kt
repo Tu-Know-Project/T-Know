@@ -6,6 +6,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.core.content.ContextCompat.startActivity
+import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
 import com.example.t_know.R
@@ -105,11 +106,11 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
     private fun likedMenu(){
 
         binding.menuE.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ibook.kpu.ac.kr/Viewer/menu02"))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ibook.kpu.ac.kr/Viewer/menu01"))
             startActivity(intent)
         }
         binding.menuTip.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ibook.kpu.ac.kr/Viewer/menu01"))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://ibook.kpu.ac.kr/Viewer/menu02"))
             startActivity(intent)
         }
         binding.menuSandol.setOnClickListener {
@@ -121,7 +122,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
     private fun startAutoScroll() {
         lifecycleScope.launch {
             while (isActive) {
-                delay(5000)
+                delay(8000)
                 val currentPage = binding.fragmentContainer.currentItem
                 val totalPages = binding.fragmentContainer.adapter?.itemCount ?: 0
                 if (totalPages > 0) {
@@ -225,11 +226,17 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         val today = Calendar.getInstance().get(Calendar.DAY_OF_WEEK)
         if (today == Calendar.TUESDAY) {
             binding.menuTako.text = "오늘은 타코야끼 오는 날~"
+            binding.takoModal.isVisible = true
         } else {
-            binding.menuTako.text = "타코야끼는 화요일"
+            binding.menuTako.text = "타코야끼는 화요일에 와요"
+            binding.takoModal.isVisible = false
         }
 
         binding.menuTako.setOnClickListener {
+            val dialog = TakoDialogFragment()
+            dialog.show(supportFragmentManager, "TakoDialogFragment")
+        }
+        binding.takoModal.setOnClickListener {
             val dialog = TakoDialogFragment()
             dialog.show(supportFragmentManager, "TakoDialogFragment")
         }

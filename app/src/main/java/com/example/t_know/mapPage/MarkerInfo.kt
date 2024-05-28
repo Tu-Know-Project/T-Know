@@ -46,7 +46,7 @@ val RestaurantMarkerList = listOf(
     ),
     MarkerInfo(
         category = Category.RESTAURANT,
-        position = LatLng(37.346330898623854, 126.73402886674774),
+        position = LatLng(37.345156230442676, 126.73555657497374),
         caption = "돈통마늘보쌈",
         placeInfo = RestaurantList[4]
     ),
@@ -192,7 +192,7 @@ val BarMarkerList = listOf(
     ),
     MarkerInfo(
         category = Category.BAR,
-        position = LatLng(37.3440773, 126.7356254),
+        position = LatLng(37.34411096497163, 126.73552356254751),
         caption = "27%",
         placeInfo = BarList[2]
     ),
@@ -565,7 +565,7 @@ val SmokeMarkerList = listOf(
     ),
     MarkerInfo(
         category = Category.SMOKE_AREA,
-        position = LatLng(37.34045537452338, 126.7346646186541),
+        position = LatLng(37.339601805491114, 126.73373098017098),
         caption = "행정동 옆",
         placeInfo = SmokeAreaList[2]
     ),
@@ -574,6 +574,12 @@ val SmokeMarkerList = listOf(
         position = LatLng(37.338546886616136, 126.73441460610988),
         caption = "산학융합관 옆",
         placeInfo = SmokeAreaList[3]
+    ),
+    MarkerInfo(
+        category = Category.SMOKE_AREA,
+        position = LatLng(37.34194999240698, 126.73218226185524),
+        caption = "Tip 기숙사 6층",
+        placeInfo = SmokeAreaList[4]
     ),
 )
 val OtherMarkerList = listOf(
