@@ -10,7 +10,7 @@ import com.example.t_know.mapPage.MapActivity
 
 
 class PlaceMenuFragment : BaseFragment<FragmentPlaceMenuBinding>(
-    R.layout.fragment_how_menu,
+    R.layout.fragment_place_menu,
     FragmentPlaceMenuBinding::inflate
 ) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
