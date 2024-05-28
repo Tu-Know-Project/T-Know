@@ -202,9 +202,9 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
                     Category.BAR -> OverlayImage.fromResource(R.drawable.markers_bar_icon)
                     Category.PARTNERSHIP -> OverlayImage.fromResource(R.drawable.markers_partnership_icon)
                     Category.FACILITY ->OverlayImage.fromResource(R.drawable.markers_facility_icon)
-                    Category.OFFICE ->OverlayImage.fromResource(R.drawable.markers_facility_icon)
-                    Category.SMOKE_AREA ->OverlayImage.fromResource(R.drawable.markers_facility_icon)
-                    Category.OTHER ->OverlayImage.fromResource(R.drawable.markers_facility_icon)
+                    Category.OFFICE ->OverlayImage.fromResource(R.drawable.markers_office_icon)
+                    Category.SMOKE_AREA ->OverlayImage.fromResource(R.drawable.markers_smoking_area_icon)
+                    Category.OTHER ->OverlayImage.fromResource(R.drawable.markers_other_icon)
                 }
                 marker.tag = info
                 marker.setOnClickListener {
