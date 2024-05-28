@@ -566,12 +566,12 @@ val PartnerList = listOf(
 val FacilityList = listOf(
     PlaceInfo(
         name = "Tip GX룸",
-        summary = "제 1기숙사 6층에 위치한 GX룸.",
+        summary = "제 1기숙사 6층에 위치한 다목적체련실.",
         address = "시흥시 산기대학로 237 Tip 6층",
         phoneNumber = "031-8041-0100",
         category = "필라테스, 요가, 미러룸",
         recommendedMenu = "--",
-        photos = ""
+        photos = "https://i.postimg.cc/gcN5cfD6/Kakao-Talk-20240528-090126350.jpg"
     ),
     PlaceInfo(
         name = "Tip 노래방",
@@ -598,7 +598,7 @@ val FacilityList = listOf(
         phoneNumber = "031-8041-0100",
         category = "라운지",
         recommendedMenu = "--",
-        photos = ""
+        photos = "https://i.postimg.cc/GhNXHD5k/2024-05-28-151322.png"
     ),
     PlaceInfo(
         name = "하나 라운지",
@@ -607,7 +607,16 @@ val FacilityList = listOf(
         phoneNumber = "031-8041-0100",
         category = "라운지",
         recommendedMenu = "--",
-        photos = ""
+        photos = "https://i.postimg.cc/v80qwk72/2024-05-28-151253.png"
+    ),
+    PlaceInfo(
+        name = "Tip 2층 스터디 라운지",
+        summary = "제 1기숙사 2층에 위치한 라운지.",
+        address = "시흥시 산기대학로 237 Tip 2층",
+        phoneNumber = "031-8041-0100",
+        category = "라운지",
+        recommendedMenu = "--",
+        photos = "https://i.postimg.cc/9FGD75xJ/Kakao-Talk-20240528-090126350-04.jpg"
     ),
     PlaceInfo(
         name = "Tip 2층 라운지",
@@ -616,7 +625,7 @@ val FacilityList = listOf(
         phoneNumber = "031-8041-0100",
         category = "라운지",
         recommendedMenu = "--",
-        photos = ""
+        photos = "https://i.postimg.cc/W3B4dXgB/Kakao-Talk-20240528-090126350-05.jpg"
     ),
     PlaceInfo(
         name = "Tip 3층 라운지",
@@ -625,7 +634,7 @@ val FacilityList = listOf(
         phoneNumber = "031-8041-0100",
         category = "라운지",
         recommendedMenu = "--",
-        photos = ""
+        photos = "https://i.postimg.cc/yxRkjw76/Kakao-Talk-20240528-090126350-03.jpg"
     ),
     PlaceInfo(
         name = "제2기숙사 1층 라운지",
@@ -634,7 +643,7 @@ val FacilityList = listOf(
         phoneNumber = "031-8041-0100",
         category = "라운지",
         recommendedMenu = "--",
-        photos = ""
+        photos = "https://i.postimg.cc/kGN7B9nS/Kakao-Talk-20240528-090126350-07.jpg"
     ),
     PlaceInfo(
         name = "제2기숙사 2층 라운지",
@@ -643,16 +652,25 @@ val FacilityList = listOf(
         phoneNumber = "031-8041-0100",
         category = "라운지",
         recommendedMenu = "--",
-        photos = ""
+        photos = "https://i.postimg.cc/1zTmdJC8/Kakao-Talk-20240528-090126350-06.jpg"
     ),
     PlaceInfo(
-        name = "종합교육관 라운지 채움, 나눔",
-        summary = "종합교육관 2층에 위치한 라운지.",
+        name = "종합교육관 라운지 채움",
+        summary = "종합교육관 2층에 위치한 실내 라운지.",
         address = "시흥시 산기대학로 237 종합교육관 2층",
         phoneNumber = "031-8041-0100",
         category = "라운지",
         recommendedMenu = "--",
-        photos = ""
+        photos = "https://i.postimg.cc/8cGS83hz/Kakao-Talk-20240528-090126350-13.jpg"
+    ),
+    PlaceInfo(
+        name = "종합교육관 라운지 나눔",
+        summary = "종합교육관 2층에 위치한 야외 라운지.",
+        address = "시흥시 산기대학로 237 종합교육관 2층",
+        phoneNumber = "031-8041-0100",
+        category = "라운지",
+        recommendedMenu = "--",
+        photos = "https://i.postimg.cc/CKW07d5D/Kakao-Talk-20240528-090126350-09.jpg"
     ),
     PlaceInfo(
         name = "B동 라운지 배움",
@@ -661,7 +679,7 @@ val FacilityList = listOf(
         phoneNumber = "031-8041-0100",
         category = "라운지",
         recommendedMenu = "--",
-        photos = ""
+        photos = "https://i.postimg.cc/xjLfsGKd/Kakao-Talk-20240528-090126350-08.jpg"
     ),
     PlaceInfo(
         name = "D동 라운지 다룸",
@@ -670,7 +688,7 @@ val FacilityList = listOf(
         phoneNumber = "031-8041-0100",
         category = "라운지",
         recommendedMenu = "--",
-        photos = ""
+        photos = "https://i.postimg.cc/DfQhQvTJ/Kakao-Talk-20240528-090126350-18.jpg"
     ),
     PlaceInfo(
         name = "E동 라운지 이룸",
@@ -679,7 +697,7 @@ val FacilityList = listOf(
         phoneNumber = "031-8041-0100",
         category = "라운지",
         recommendedMenu = "--",
-        photos = ""
+        photos = "https://i.postimg.cc/VsFyrKqX/Kakao-Talk-20240528-094514941-02.jpg"
     ),
 )
 val OfficeList = listOf(
@@ -792,6 +810,7 @@ val OfficeList = listOf(
         photos = ""
     ),
 )
+
 val SmokeAreaList =  listOf(
     PlaceInfo(
         name = "Tip 기숙사 뒷편",
@@ -831,4 +850,95 @@ val SmokeAreaList =  listOf(
     ),
 
     )
-
+val OtherAreaList =  listOf(
+    PlaceInfo(
+        name = "큐브",
+        summary = "Tip 쥬씨 앞 큐브",
+        address = "24시간 무인 프린터기",
+        phoneNumber = "02-1688-5677",
+        category = "프린터기",
+        recommendedMenu = "흑백 40원, 컬러 400원",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "큐브",
+        summary = "제 2기숙사 출입구 옆 큐브",
+        address = "24시간 무인 프린터기",
+        phoneNumber = "02-1688-5677",
+        category = "프린터기",
+        recommendedMenu = "흑백 40원, 컬러 400원",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "큐브",
+        summary = "종합교육관 2층 큐브",
+        address = "24시간 무인 프린터기",
+        phoneNumber = "02-1688-5677",
+        category = "프린터기",
+        recommendedMenu = "흑백 40원, 컬러 400원",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "큐브",
+        summary = "B동 1층 큐브",
+        address = "24시간 무인 프린터기",
+        phoneNumber = "02-1688-5677",
+        category = "프린터기",
+        recommendedMenu = "흑백 40원, 컬러 400원",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "큐브",
+        summary = "G동 1층 큐브",
+        address = "24시간 무인 프린터기",
+        phoneNumber = "02-1688-5677",
+        category = "프린터기",
+        recommendedMenu = "흑백 40원, 컬러 400원",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "큐브",
+        summary = "산학융합관 1층 큐브",
+        address = "24시간 무인 프린터기",
+        phoneNumber = "02-1688-5677",
+        category = "프린터기",
+        recommendedMenu = "흑백 40원, 컬러 400원",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "큐브",
+        summary = "C동 2층 큐브",
+        address = "24시간 무인 프린터기",
+        phoneNumber = "02-1688-5677",
+        category = "프린터기",
+        recommendedMenu = "흑백 40원, 컬러 400원",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "증명서 발급기",
+        summary = "Tip 1층 증명서 발급기",
+        address = "각종 증명서발급기",
+        phoneNumber = "070-8656-0551",
+        category = "무인 발급기",
+        recommendedMenu = "재학, 졸업, 성적증명서 등",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "증명서 발급기",
+        summary = "종합교육관 1층 증명서 발급기",
+        address = "각종 증명서발급기",
+        phoneNumber = "070-8656-0551",
+        category = "무인 발급기",
+        recommendedMenu = "재학, 졸업, 성적증명서 등",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "증명서 발급기",
+        summary = "행정동 증명서 발급기",
+        address = "각종 증명서발급기",
+        phoneNumber = "070-8656-0551",
+        category = "무인 발급기",
+        recommendedMenu = "재학, 졸업, 성적증명서 등",
+        photos = ""
+    ),
+)

@@ -503,3 +503,65 @@ val SmokeMarkerList = listOf(
         placeInfo = SmokeAreaList[3]
     ),
 )
+val OtherMarkerList = listOf(
+    MarkerInfo(
+        category = Category.OTHER,
+        position = LatLng(37.34192082419316, 126.73223314875484),
+        caption = "큐브",
+        placeInfo = OtherAreaList[0]
+    ),
+    MarkerInfo(
+        category = Category.OTHER,
+        position = LatLng(37.341115673836335, 126.73279461792146 ),
+        caption = "큐브",
+        placeInfo = OtherAreaList[1]
+    ),
+    MarkerInfo(
+        category = Category.OTHER,
+        position = LatLng(37.34064790326975, 126.73413354670222),
+        caption = "큐브",
+        placeInfo = OtherAreaList[2]
+    ),
+    MarkerInfo(
+        category = Category.OTHER,
+        position = LatLng(37.340267327819674, 126.73318131127981),
+        caption = "큐브",
+        placeInfo = OtherAreaList[3]
+    ),
+    MarkerInfo(
+        category = Category.OTHER,
+        position = LatLng(37.34017612765926, 126.73469663459026),
+        caption = "큐브",
+        placeInfo = OtherAreaList[4]
+    ),
+    MarkerInfo(
+        category = Category.OTHER,
+        position = LatLng(37.33863093993878, 126.73473028147049),
+        caption = "큐브",
+        placeInfo = OtherAreaList[5]
+    ),
+    MarkerInfo(
+        category = Category.OTHER,
+        position = LatLng(37.33993101453102, 126.73387934266225),
+        caption = "큐브",
+        placeInfo = OtherAreaList[6]
+    ),
+    MarkerInfo(
+        category = Category.OTHER,
+        position = LatLng(37.34174829656595, 126.73264002692977),
+        caption = "증명서 발급기",
+        placeInfo = OtherAreaList[7]
+    ),
+    MarkerInfo(
+        category = Category.OTHER,
+        position = LatLng(37.34074909055672, 126.73405419495386),
+        caption = "증명서 발급기",
+        placeInfo = OtherAreaList[8]
+    ),
+    MarkerInfo(
+        category = Category.OTHER,
+        position = LatLng(37.339828519048666, 126.73337752763196),
+        caption = "증명서 발급기",
+        placeInfo = OtherAreaList[8]
+    ),
+)
