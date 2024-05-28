@@ -959,3 +959,180 @@ val OtherAreaList =  listOf(
         photos = "https://i.postimg.cc/TPDbShjG/Kakao-Talk-20240528-160913935-01.jpg"
     ),
 )
+val InCafeList =  listOf(
+    PlaceInfo(
+        name = "카페아이엔지",
+        summary = "제 1기숙사 1층에 위치한 카페.",
+        address = "시흥시 산기대학로 237 Tip 1층",
+        phoneNumber = "--",
+        category = "카페",
+        recommendedMenu = "아이스 아메리카노",
+        photos = "https://i.postimg.cc/SQgjcsKg/Kakao-Talk-20240528-160913935-20.jpg"
+    ),
+    PlaceInfo(
+        name = "쥬씨",
+        summary = "제 1기숙사 1층에 위치한 카페.",
+        address = "시흥시 산기대학로 237 Tip 1층",
+        phoneNumber = "--",
+        category = "카페",
+        recommendedMenu = "망고주스, 수박 주스",
+        photos = "https://i.postimg.cc/Y0C9JcdN/Kakao-Talk-20240528-160913935-17.jpg"
+    ),
+    PlaceInfo(
+        name = "토스피아",
+        summary = "제 1기숙사 1층에 위치한 카페.",
+        address = "시흥시 산기대학로 237 Tip 1층",
+        phoneNumber = "--",
+        category = "토스트, 카페",
+        recommendedMenu = "데리치즈 샌드위치, 치즈불고기 샌드위치",
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjEyMDhfMjc2%2FMDAxNjcwNTA2ODkzMzYx.33VsUfrEx4ElF0x729CpVHy1ZZ0LwNQWPI2UPcttxgQg.UnNsL5SkBlPPLSWeDvrBOmO1H-yUo6F4UJmkn7PLvR0g.JPEG%2FScreenshot_20221207-174345_KakaoMap.jpg%3Ftype%3Dw1500_60_sharpen"
+    ),
+    PlaceInfo(
+        name = "스터디카페",
+        summary = "종합교육관 2층에 위치한 카페.",
+        address = "시흥시 산기대학로 237 종합교육관 2층",
+        phoneNumber = "--",
+        category = "카페",
+        recommendedMenu = "아이스초코",
+        photos = "https://i.postimg.cc/G2chywn0/Kakao-Talk-20240528-090126350-11.jpg"
+    ),
+    PlaceInfo(
+        name = "일리 카페",
+        summary = "산학융합관 1층에 위치한 카페.",
+        address = "시흥시 산기대학로 237 산학융합관 1층",
+        phoneNumber = "--",
+        category = "카페",
+        recommendedMenu = "아이스 아메리카노",
+        photos = "https://i.postimg.cc/g0JF3YBP/Kakao-Talk-20240528-184306860.jpg"
+    ),
+    PlaceInfo(
+        name = "블루포트 경과기대점",
+        summary = "경기과학기술대에 위치한 카페.",
+        address = "경기 시흥시 경기과기대로 270",
+        phoneNumber = "--",
+        category = "카페",
+        recommendedMenu = "아이스 아메리카노",
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjA4MTlfNSAg%2FMDAxNjYwODY4OTU2MzQy.rfWtviWPHGnxiZ986raSt-6-smrUoyJnKiSrVjs-GPkg.LDE0Fw_QNd9y2rurcZlf8251pyi5lEfoRkEmWDLgX_0g.JPEG%2Fupload_230c021c1febe47016850df764005227.jpg%3Ftype%3Dw1500_60_sharpen"
+    ),
+
+    )
+val InRestaurantList =  listOf(
+    PlaceInfo(
+        name = "E동 레스토랑",
+        summary = "E동 1층에 위치한 교수님들이 애용하시는 식당",
+        address = "시흥시 산기대학로 237 E동 1층",
+        phoneNumber = "--",
+        category = "식당",
+        recommendedMenu = "뷔페식 학식",
+        photos = "https://i.postimg.cc/NLq2rCgW/Kakao-Talk-20240528-094514941-01.jpg"
+    ),
+    PlaceInfo(
+        name = "수호 식당",
+        summary = "제 1기숙사 1층에 위치한 식당",
+        address = "시흥시 산기대학로 237 Tip 1층",
+        phoneNumber = "--",
+        category = "식당",
+        recommendedMenu = "한식뷔페, 국밥류",
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230620_234%2F1687253092676zbibg_JPEG%2F1687253084490.jpg"
+    ),
+    PlaceInfo(
+        name = "버텍스",
+        summary = "제 1기숙사 1층에 위치한 식당",
+        address = "시흥시 산기대학로 237 Tip 1층",
+        phoneNumber = "--",
+        category = "식당",
+        recommendedMenu = "미국식 덮밥",
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240320_171%2F1710944033502tXHFe_PNG%2F%25B4%25EB%25C7%25A5%25B7%25CE%25B0%25ED.png"
+    ),
+    PlaceInfo(
+        name = "학생 식당 가가",
+        summary = "제 1기숙사 B1층에 위치한 식당",
+        address = "시흥시 산기대학로 237 Tip B1층",
+        phoneNumber = "--",
+        category = "식당",
+        recommendedMenu = "뷔페식 학식",
+        photos = "https://i.postimg.cc/P5KbBhfJ/2024-05-28-184902.png"
+    ),
+    PlaceInfo(
+        name = "올리브그린",
+        summary = "제 1기숙사 2층에 위치한 식당",
+        address = "시흥시 산기대학로 237 Tip 2층",
+        phoneNumber = "--",
+        category = "식당",
+        recommendedMenu = "김치볶음밥",
+        photos = "https://i.postimg.cc/gkH3ZdZs/2024-05-28-185126.png"
+    ),
+    PlaceInfo(
+        name = "라온 식당",
+        summary = "종합교육관 1층에 위치한 식당",
+        address = "시흥시 산기대학로 237 종합교육관 1층",
+        phoneNumber = "--",
+        category = "식당",
+        recommendedMenu = "라면+주먹밥세트",
+        photos = "https://i.postimg.cc/R0NtyHbp/2024-05-28-185149.png"
+    ),
+    PlaceInfo(
+        name = "토마토 도시락",
+        summary = "산학융합관 1층에 위치한 식당",
+        address = "시흥시 산기대학로 237 산학융합관 1층",
+        phoneNumber = "--",
+        category = "식당",
+        recommendedMenu = "불닭갈비도시락",
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMzA3MDNfNzkg%2FMDAxNjg4MzYwMzg0NTIy.iKE89-6NK8WQJ3hEdE5Tq4iseJw4rlLyQnQ7CvyuzQwg.rK-6W9uNMo4pOnOBbj_-BESj1cUQ9s8AYyWh_dY60b4g.JPEG%2FA5E893AF-BBA4-4B0A-B6FF-9B06B1CA4317.jpeg%3Ftype%3Dw1500_60_sharpen"
+    ),
+    PlaceInfo(
+        name = "나드리 김밥",
+        summary = "산학융합관 1층에 위치한 식당",
+        address = "시흥시 산기대학로 237 산학융합관 1층",
+        phoneNumber = "--",
+        category = "식당",
+        recommendedMenu = "제육덮밥, 참치김밥",
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyMjExMzBfMjg4%2FMDAxNjY5NzY5MzE0NzUx.8Wf71mRzVVIdgF78Chs_6Ec9Qozx0itCN5qx2i1XVTMg.jI9XTnnYOROu9uHtKT52zLZqots2dvbpAkmMVBfXXmsg.JPEG%2FDFF56C34-4E30-4CBA-B334-82CFE3BF6F19.jpeg%3Ftype%3Dw1500_60_sharpen"
+    ),
+    PlaceInfo(
+        name = "OG 버거",
+        summary = "산학융합관 1층에 위치한 식당",
+        address = "시흥시 산기대학로 237 산학융합관 1층",
+        phoneNumber = "--",
+        category = "식당",
+        recommendedMenu = "OG그릴드버거",
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220829_271%2F1661754356930kBf8N_PNG%2F123.PNG"
+    ),
+    PlaceInfo(
+        name = "신북경",
+        summary = "제 1기숙사 B1층에 위치한 식당",
+        address = "시흥시 산기대학로 237 Tip B1층",
+        phoneNumber = "--",
+        category = "식당",
+        recommendedMenu = "마라탕, 불짜장",
+        photos = "https://i.postimg.cc/3NT5z29g/2024-05-28-192709.png"
+    ),
+    PlaceInfo(
+        name = "하나비",
+        summary = "제 1기숙사 B1층에 위치한 식당",
+        address = "시흥시 산기대학로 237 Tip B1층",
+        phoneNumber = "--",
+        category = "식당",
+        recommendedMenu = "소금구이덮밥",
+        photos = "https://i.postimg.cc/ryBKFHZJ/2024-05-28-192209.png"
+    ),
+    PlaceInfo(
+        name = "한스오믈렛",
+        summary = "제 1기숙사 B1층에 위치한 식당",
+        address = "시흥시 산기대학로 237 Tip B1층",
+        phoneNumber = "--",
+        category = "식당",
+        recommendedMenu = "연탄숯불구이+쫄면",
+        photos = "https://i.postimg.cc/SsQxHFsS/2024-05-28-192115.png"
+    ),
+    PlaceInfo(
+        name = "맘스터치",
+        summary = "제 1기숙사 B1층에 위치한 식당",
+        address = "시흥시 산기대학로 237 Tip B1층",
+        phoneNumber = "--",
+        category = "식당",
+        recommendedMenu = "딥치즈싸이버거, 싸이버거",
+        photos = "https://i.postimg.cc/cCbCQ9ds/2024-05-28-191748.png"
+    ),
+
+    )

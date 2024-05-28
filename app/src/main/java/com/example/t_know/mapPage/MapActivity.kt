@@ -186,6 +186,26 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
             behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
     }
+    private fun selectCategoryScool() {
+        binding.categoryGroup.bringToFront()
+
+        binding.categoryOne.setOnClickListener {
+            showMarkers(FacilityMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+        }
+        binding.categoryTwo.setOnClickListener {
+            showMarkers(OfficeMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+        }
+        binding.categoryThree.setOnClickListener {
+            showMarkers(SmokeMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+        }
+        binding.categoryFour.setOnClickListener {
+            showMarkers(OtherMarkerList)
+            behavior.state = BottomSheetBehavior.STATE_HIDDEN
+        }
+    }
     private fun showMarkers(markerList: List<MarkerInfo>) {
         clearMarkers()
         if (markerList.isNotEmpty()) {
