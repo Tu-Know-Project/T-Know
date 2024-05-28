@@ -161,6 +161,20 @@ val DessertMarkerList = listOf(
         caption = "하이샌드",
         placeInfo = DessertList[7]
     ),
+
+    MarkerInfo(
+        category = Category.DESSERT,
+        position = LatLng(37.34320401867642, 126.73489194094553),
+        caption = "츄러스캠퍼스",
+        placeInfo = DessertList[8]
+    ),
+    MarkerInfo(
+        category = Category.DESSERT,
+        position = LatLng(37.348001274401064, 126.73357153098269),
+        caption = "쁘숑베이커리",
+        placeInfo = DessertList[9]
+    ),
+
 )
 
 val BarMarkerList = listOf(
@@ -387,3 +401,105 @@ val FacilityMarkerList = listOf(
     ),
 
     )
+
+val OfficeMarkerList = listOf(
+    MarkerInfo(
+        category = Category.OFFICE,
+        position = LatLng(37.33969020867472, 126.73498046505951),
+        caption = "컴퓨터공학부 학과사무실",
+        placeInfo = OfficeList[0]
+    ),
+    MarkerInfo(
+        category = Category.OFFICE,
+        position = LatLng(37.33969020867472, 126.73498046505951),
+        caption = "게임공학과 학과사무실",
+        placeInfo = OfficeList[1]
+    ),
+    MarkerInfo(
+        category = Category.OFFICE,
+        position = LatLng(37.33941656524725, 126.73550334894024),
+        caption = "나노반도체공학과 학과사무실",
+        placeInfo = OfficeList[2]
+    ),
+    MarkerInfo(
+        category = Category.OFFICE,
+        position = LatLng(37.340158265382804, 126.73476722816471),
+        caption = "경영학부 학과사무실",
+        placeInfo = OfficeList[3]
+    ),
+    MarkerInfo(
+        category = Category.OFFICE,
+        position = LatLng(37.3396837349094, 126.73410309090019),
+        caption = "신소재공학과 학과사무실",
+        placeInfo = OfficeList[4]
+    ),
+    MarkerInfo(
+        category = Category.OFFICE,
+        position = LatLng(37.3396837349094, 126.73410309090019),
+        caption = "생명화학공학과 학과사무실",
+        placeInfo = OfficeList[5]
+    ),
+    MarkerInfo(
+        category = Category.OFFICE,
+        position = LatLng(37.340016935065954, 126.73402292194024),
+        caption = "에너지전기공학과 학과사무실",
+        placeInfo = OfficeList[6]
+    ),
+    MarkerInfo(
+        category = Category.OFFICE,
+        position = LatLng(37.3403171129712, 126.73328269963326),
+        caption = "기계설계공학과 학과사무실",
+        placeInfo = OfficeList[7]
+    ),
+    MarkerInfo(
+        category = Category.OFFICE,
+        position = LatLng(37.3403171129712, 126.73328269963326),
+        caption = "메카트로닉스공학과 학과사무실",
+        placeInfo = OfficeList[8]
+    ),
+    MarkerInfo(
+        category = Category.OFFICE,
+        position = LatLng(37.340383658286136, 126.73282542374629),
+        caption = "디자인공학부 학과사무실",
+        placeInfo = OfficeList[9]
+    ),
+    MarkerInfo(
+        category = Category.OFFICE,
+        position = LatLng(37.340383658286136, 126.73282542374629),
+        caption = "기계공학과 학과사무실",
+        placeInfo = OfficeList[10]
+    ),
+    MarkerInfo(
+        category = Category.OFFICE,
+        position = LatLng(37.338630389369875, 126.73448484139739),
+        caption = "전자공학부 학과사무실",
+        placeInfo = OfficeList[10]
+    ),
+    )
+
+val SmokeMarkerList = listOf(
+    MarkerInfo(
+        category = Category.SMOKE_AREA,
+        position = LatLng(37.34182048020668, 126.73268491170046),
+        caption = "Tip 기숙사 뒷편",
+        placeInfo = SmokeAreaList[0]
+    ),
+    MarkerInfo(
+        category = Category.SMOKE_AREA,
+        position = LatLng(37.34045537452338, 126.7346646186541),
+        caption = "공학관 G동 뒷편",
+        placeInfo = SmokeAreaList[1]
+    ),
+    MarkerInfo(
+        category = Category.SMOKE_AREA,
+        position = LatLng(37.34045537452338, 126.7346646186541),
+        caption = "행정동 옆",
+        placeInfo = SmokeAreaList[2]
+    ),
+    MarkerInfo(
+        category = Category.SMOKE_AREA,
+        position = LatLng(37.338546886616136, 126.73441460610988),
+        caption = "산학융합관 옆",
+        placeInfo = SmokeAreaList[3]
+    ),
+)

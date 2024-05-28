@@ -829,4 +829,6 @@ val SmokeAreaList =  listOf(
         recommendedMenu = "",
         photos = ""
     ),
+
     )
+

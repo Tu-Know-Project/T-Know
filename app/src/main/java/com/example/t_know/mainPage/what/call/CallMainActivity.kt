@@ -38,25 +38,25 @@ class CallMainActivity : BaseActivity<ActivityWhatCallBinding>(
 
     private fun callClick(){
         binding.carrerCall.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:031-8041-0122")))
+            startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:031-8041-0122")))
         }
         binding.domitoryCall.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:031:8041-0082")))
+            startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:031:8041-0082")))
         }
         binding.facilityCall.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:031-8041-0162")))
+            startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:031-8041-0162")))
         }
         binding.libCall.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:031-8041-0772")))
+            startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:031-8041-0772")))
         }
         binding.practiceCall.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:031-8041-0854")))
+            startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:031-8041-0854")))
         }
         binding.schoolCall.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:031-8041-0022")))
+            startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:031-8041-0022")))
         }
         binding.studentCall.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_CALL, Uri.parse("tel:031-8041-0092")))
+            startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:031-8041-0092")))
         }
     }
 }
