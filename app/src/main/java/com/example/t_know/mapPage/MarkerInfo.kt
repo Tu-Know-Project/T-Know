@@ -392,10 +392,83 @@ val PartnerMarkerList = listOf(
 )
 val FacilityMarkerList = listOf(
     MarkerInfo(
-        category = Category.PARTNERSHIP,
-        position = LatLng(37.34168681424398, 126.73234683106969),
-        caption = "Tip(기술혁신파크)",
+        category = Category.FACILITY,
+        position = LatLng(37.34188727214375, 126.73233765576695),
+        caption = "Tip GX룸",
         placeInfo = FacilityList[0]
+    ),
+
+    MarkerInfo(
+        category = Category.FACILITY,
+        position = LatLng(37.341880559169724, 126.73235742864972),
+        caption = "Tip 노래방",
+        placeInfo = FacilityList[1]
+    ),
+    MarkerInfo(
+        category = Category.FACILITY,
+        position = LatLng(37.34188285639667, 126.73237716955559),
+        caption = "Tip 헬스장",
+        placeInfo = FacilityList[2]
+    ),
+    MarkerInfo(
+        category = Category.FACILITY,
+        position = LatLng(37.34162767958585, 126.73209594661566),
+        caption = "Tip 라운지",
+        placeInfo = FacilityList[3]
+    ),
+    MarkerInfo(
+        category = Category.FACILITY,
+        position = LatLng(37.34180563112166, 126.7320953144798),
+        caption = "하나 라운지",
+        placeInfo = FacilityList[4]
+    ),
+    MarkerInfo(
+        category = Category.FACILITY,
+        position = LatLng(37.341848550965665, 126.73214876657744),
+        caption = "Tip 2층 라운지",
+        placeInfo = FacilityList[5]
+    ),
+    MarkerInfo(
+        category = Category.FACILITY,
+        position = LatLng(37.341805484162755, 126.7320304253057),
+        caption = "Tip 3층 라운지",
+        placeInfo = FacilityList[6]
+    ),
+    MarkerInfo(
+        category = Category.FACILITY,
+        position = LatLng(37.34107303463666, 126.73286530058431),
+        caption = "제2기숙사 1층 라운지",
+        placeInfo = FacilityList[7]
+    ),
+    MarkerInfo(
+        category = Category.FACILITY,
+        position = LatLng(37.341194487647876, 126.7327830536145),
+        caption = "제2기숙사 2층 라운지",
+        placeInfo = FacilityList[8]
+    ),
+    MarkerInfo(
+        category = Category.FACILITY,
+        position = LatLng(37.34069517515805, 126.73411927381368),
+        caption = "종합교육관 라운지 채움, 나눔",
+        placeInfo = FacilityList[9]
+    ),
+    MarkerInfo(
+        category = Category.FACILITY,
+        position = LatLng(37.34040964565605, 126.73336136709445),
+        caption = "B동 라운지 배움",
+        placeInfo = FacilityList[10]
+    ),
+    MarkerInfo(
+        category = Category.FACILITY,
+        position = LatLng(37.339823564317484, 126.73417877080436),
+        caption = "D동 라운지 다룸",
+        placeInfo = FacilityList[11]
+    ),
+    MarkerInfo(
+        category = Category.FACILITY,
+        position = LatLng(37.33961377354453, 126.73504844265928),
+        caption = "E동 라운지 이룸",
+        placeInfo = FacilityList[11]
     ),
 
     )
