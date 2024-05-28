@@ -87,9 +87,9 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
 
         when (categoryCode) {
             21 -> showMarkers(FacilityMarkerList)
-            22 -> showMarkers(FacilityMarkerList)
-            23 -> showMarkers(FacilityMarkerList)
-            24 -> showMarkers(FacilityMarkerList)
+            22 -> showMarkers(OfficeMarkerList)
+            23 -> showMarkers(SmokeMarkerList)
+            24 -> showMarkers(OtherMarkerList)
         }
     }
     private fun persistentBottomSheetEvent() {
@@ -174,15 +174,15 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
             behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
         binding.categoryTwo.setOnClickListener {
-            showMarkers(FacilityMarkerList)
+            showMarkers(OfficeMarkerList)
             behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
         binding.categoryThree.setOnClickListener {
-            showMarkers(FacilityMarkerList)
+            showMarkers(SmokeMarkerList)
             behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
         binding.categoryFour.setOnClickListener {
-            showMarkers(FacilityMarkerList)
+            showMarkers(OtherMarkerList)
             behavior.state = BottomSheetBehavior.STATE_HIDDEN
         }
     }
