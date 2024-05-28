@@ -2,6 +2,8 @@ package com.example.t_know.mapPage
 
 import BaseActivity
 import android.Manifest
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.MotionEvent
@@ -68,6 +70,8 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
         }
 
         persistentBottomSheetEvent()
+
+        callPlace()
     }
     private fun handleIntentData() {
         when (intentCode) {
@@ -232,6 +236,13 @@ class MapActivity : BaseActivity<ActivityMapBinding>(ActivityMapBinding::inflate
         binding.placeCategory.text = placeInfo.category
         binding.placeRecommend.text = placeInfo.recommendedMenu
         Glide.with(this).load(placeInfo.photos).into(binding.placeImage)
+    }
+
+    private fun callPlace(){
+        binding.callBtn.setOnClickListener {
+            val phoneNum = binding.placeCall.text.toString()
+            startActivity(Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNum")))
+        }
     }
 
 }
