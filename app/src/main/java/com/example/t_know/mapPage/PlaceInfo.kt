@@ -18,7 +18,7 @@ val RestaurantList = listOf(
         phoneNumber = "031-319-8676",
         category = "국밥",
         recommendedMenu = "수육국밥, 순대국밥",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210801_38%2F1627801372012vT23R_JPEG%2FTAUosSn2OjMY1s3wOim65-T7.jpg"
     ),
     PlaceInfo(
         name = "참나무누룽닭",
@@ -27,7 +27,7 @@ val RestaurantList = listOf(
         phoneNumber = "0507-1484-5222",
         category = "구운 치킨, 숯불 구이 닭",
         recommendedMenu = "누룽지 통닭 + 콘치즈 폭포",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200626_123%2F1593144906043dywjE_JPEG%2FXSXDw3gCqwe4De1oqcOsKqR_.jpg"
     ),
     PlaceInfo(
         name = "형제들 감자탕",
@@ -36,7 +36,7 @@ val RestaurantList = listOf(
         phoneNumber = "031-496-0833",
         category = "감자탕",
         recommendedMenu = "뼈해장국, 감자탕",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEyMDZfMTg2%2FMDAxNzAxNzkxNjY1Mzg2.sPNcZTyp2b7dnTTsLK2MSB62-PHS4OkELKmuO0EaDLog.7ihKJNmm1bCwnn_HjZashR7CqzDtN2sbvXt2KSc2E4Qg.JPEG.oo4114%2FIMG_2692.jpg"
     ),
     PlaceInfo(
         name = "커리파라다이스",
@@ -45,7 +45,7 @@ val RestaurantList = listOf(
         phoneNumber = "010-5965-6185",
         category = "커리, 인도 음식",
         recommendedMenu = "버터 난 + 마크니, 갈릭 난 + 빈달루",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fpup-review-phinf.pstatic.net%2FMjAyNDAyMTdfMTUg%2FMDAxNzA4MTYyNDkyNjA2.1GeP412NKPcwtJW86KUCxYRWSaMv-w14JaAxDUlLZSYg.TvBFp1KaML2kpFGBuZg9ayXIOPqu5UUMTFFz5ObfqQwg.JPEG%2F20240217_173903.jpg.jpg%3Ftype%3Dw1500_60_sharpen"
     ),
     PlaceInfo(
         name = "돈통마늘보쌈",
@@ -54,7 +54,7 @@ val RestaurantList = listOf(
         phoneNumber = "031-497-5382",
         category = "보쌈, 한정식",
         recommendedMenu = "마늘 보쌈 정식",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200209_231%2F1581203197602lRb3b_JPEG%2FmwDieihx-FO8R_bZiYA1-ZEt.jpg"
     ),
     PlaceInfo(
         name = "평양왕족발순대",
@@ -63,7 +63,7 @@ val RestaurantList = listOf(
         phoneNumber = "031-497-0337",
         category = "족발, 한정식",
         recommendedMenu = "평양왕족발, 순댓국",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA1MTRfOTkg%2FMDAxNzE1NjQ1OTYzMTUx.TpNzXqhc7smpdBeHXNZjSQA3ewWT-oCcQtWFMmBBd2gg.V7OtOcy9HIMJSjJ-UzpMiOJk31i6_BazpVgfKynRQEAg.JPEG%2F20240506_184059.jpg"
     ),
     PlaceInfo(
         name = "두전콩밭",
@@ -72,7 +72,7 @@ val RestaurantList = listOf(
         phoneNumber = "0507-1342-3232",
         category = "두부요리, 한정식",
         recommendedMenu = "김치두부전골, 콩비지찌개",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220201_124%2F1643716547331QLAu1_JPEG%2F1643694386890.jpg"
     ),
     PlaceInfo(
         name = "고가네맛집",
@@ -81,7 +81,7 @@ val RestaurantList = listOf(
         phoneNumber = "031-319-0415",
         category = "생선구이, 한정식",
         recommendedMenu = "생선구이정식, 갈치조림",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA1MjhfMTc3%2FMDAxNzE2ODY3NjcxNDU4.IA-N1iSQ_AyTyGfTJTQuCmzoF4tuHiAqi-lNIKtoUFYg.FgO7mGjIEhAkb79Quz8HR925L8FoqWf8g25ff8nAhBAg.JPEG%2FIMG_9343.jpg"
     ),
     PlaceInfo(
         name = "메차쿠차 돈까스",
@@ -90,7 +90,7 @@ val RestaurantList = listOf(
         phoneNumber = "031-504-9000",
         category = "돈까스, 일식",
         recommendedMenu = "메차쿠차 돈가스, 고구마 치즈 돈가스, 김치나베",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231226_192%2F1703577949219k1nsT_JPEG%2FKakaoTalk_20231226_165701233.jpg"
     ),
     PlaceInfo(
         name = "샤브린",
@@ -99,7 +99,7 @@ val RestaurantList = listOf(
         phoneNumber = "0507-1447-9995",
         category = "샤브샤브, 일식",
         recommendedMenu = "소등심 샤브, 등심 쌀국수",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAzMjhfMTky%2FMDAxNzExNjMxOTg0MDMx.gjmjetK3nB9SfsdNAbI9AWFjGPbq46Havkwqn-5LFOcg.d5Y0JL8FVpkwKIbyGc6-qFuybc5zVzUzULYN7j4Gw_8g.JPEG%2F20240328%25A3%25DF181301.jpg"
     ),
     PlaceInfo(
         name = "월미당",
@@ -108,7 +108,7 @@ val RestaurantList = listOf(
         phoneNumber = "0507-1345-6882",
         category = "쌀국수, 베트남 음식",
         recommendedMenu = "차돌 쌀국수, 분짜",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230217_53%2F1676611977559faw5y_JPEG%2FKakaoTalk_20230217_142917034_02.jpg"
     ),
     PlaceInfo(
         name = "전라도연탄구이",
@@ -117,7 +117,7 @@ val RestaurantList = listOf(
         phoneNumber = "031-432-9500",
         category = "돼지고기구이, 한정식",
         recommendedMenu = "생삼겹살, 김치찌개",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA1MDFfMjAw%2FMDAxNzE0NTY5MjU0NDY1.jwRq1ZaJiBjOtC5Htz7ERjkRE0stMqQgYpm-woi_zgAg.mIAc0OdswI_wONAnrmSI18u5fG0jPRqciVIoMvUFTG0g.JPEG%2FIMG_8738.jpg"
     ),
     PlaceInfo(
         name = "정정아식당",
@@ -126,7 +126,7 @@ val RestaurantList = listOf(
         phoneNumber = "0507-1374-9870",
         category = "닭볶음탕, 한정식",
         recommendedMenu = "닭볶음탕, 꼬막무침",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAyMDVfMzMg%2FMDAxNzA3MTA0MjE4NTc2.iWMVHQKw26EkUJ1XhsT8cG-xHVo_ia_yQGULrD31PeUg.6bKhh0CzN7bfDlpax3JT9rYLec1seS63SYXTNlmdxZYg.JPEG.vdtpn%2F20240203_180048.jpg"
     ),
     PlaceInfo(
         name = "한가네 숯불닭갈비",
@@ -135,7 +135,7 @@ val RestaurantList = listOf(
         phoneNumber = "0507-1378-4792",
         category = "닭갈비, 한정식",
         recommendedMenu = "숯불양념닭갈비, 쟁반막국수",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MjBfOTIg%2FMDAxNzEzNTk2MzE1Nzk3.4rjpgsuBUMFIO7M4igd6OJkkU_HeEfJcfWw-a6BNIYMg.QRxIBh6ic5PG-f789hfFvVlGYzUFNaEsDgBugSn3qwwg.JPEG%2FIMG_3217.JPG"
     ),
     PlaceInfo(
         name = "즉석기계우동 옛날짜장",
@@ -144,9 +144,8 @@ val RestaurantList = listOf(
         phoneNumber = "0507-1364-7417",
         category = "분식, 한정식",
         recommendedMenu = "비빔우동, 닭알김밥",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230430_256%2F1682821221633vvqYE_JPEG%2F16828211878736669093573157104869.jpg"
     )
-    // 평양왕족발순대 o, 콩받 o, 고가네 o, 메챠쿠챠 돈까스 o, 샤브린 o
 )
 
 val DessertList = listOf(
@@ -211,7 +210,7 @@ val DessertList = listOf(
         phoneNumber = "010-9943-2571",
         category = "토스트, 카페",
         recommendedMenu = "하프토스트, 츄러스",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220616_26%2F1655310472611PdADD_PNG%2F05A2FA1B-2C88-45FC-AE46-24D56D57504A.png"
     ),
     PlaceInfo(
         name = "하이샌드",
@@ -220,7 +219,7 @@ val DessertList = listOf(
         phoneNumber = "070-4151-3364",
         category = "샌드위치, 카페",
         recommendedMenu = "오믈렛 베이컨 베이글, 쉬림프 파스타 샐러드",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20210801_100%2F1627780183891JHz17_JPEG%2Fimage.jpg"
     ),
     PlaceInfo(
         name = "츄러스캠퍼스",
@@ -229,7 +228,7 @@ val DessertList = listOf(
         phoneNumber = "0507-1384-1320",
         category = "츄러스, 카페",
         recommendedMenu = "오리지널 츄러스, 아츄",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDA0MjZfMTY2%2FMDAxNzE0MDg0ODYwNDI4.vc6TVeI3Y6LICjRxcBtTK1e4scbDTDvRNoNdTww0X-Eg.qUzMY4JtCOYXYPBpUSXefAMS9qidY67kql7wW7GSJvYg.JPEG%2Foutput_3627945968.jpg"
     ),
     PlaceInfo(
         name = "쁘숑베이커리",
@@ -238,7 +237,7 @@ val DessertList = listOf(
         phoneNumber = "0507-1332-3580",
         category = "빵, 카페",
         recommendedMenu = "옥수수마약빵, 생크림크로와상, 엔젤쉬폰",
-        photos = "url"
+        photos = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDAxMDNfMTc3%2FMDAxNzA0MjkyMTUyMTEz.0Sp07gFE_YMrRwS5_Ukuxa3DjoT9Tk7XnWp6ZIzjEn0g.gZAGHSm31HxL45RWKWpn_TX0P6G2oqsQ3H-u4Cy-iVgg.JPEG.yumreview%2FIMG_0568.JPG"
     ),
 )
 
@@ -580,7 +579,7 @@ val FacilityList = listOf(
         phoneNumber = "031-8041-0100",
         category = "노래방",
         recommendedMenu = "--",
-        photos = ""
+        photos = "https://i.postimg.cc/ZnJ8tZjR/Kakao-Talk-20240528-160913935-19.jpg"
     ),
     PlaceInfo(
         name = "Tip 헬스장",
@@ -589,7 +588,7 @@ val FacilityList = listOf(
         phoneNumber = "031-8041-0100",
         category = "헬스장",
         recommendedMenu = "--",
-        photos = ""
+        photos = "https://i.postimg.cc/ydsgWjRp/Kakao-Talk-20240528-160913935-18.jpg"
     ),
     PlaceInfo(
         name = "Tip 라운지",
@@ -704,20 +703,20 @@ val OfficeList = listOf(
     PlaceInfo(
         name = "컴퓨터공학부 학과사무실",
         summary = "E동에 위치한 컴퓨터공학부 학과사무실",
-        address = "시흥시 산기대학로 237 E동 3층",
+        address = "시흥시 산기대학로 237 E동 1층",
         phoneNumber = "031-8041-0510",
         category = "학과사무실",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/kG8gctWR/Kakao-Talk-20240528-094514941.jpg"
     ),
     PlaceInfo(
         name = "게임공학과 학과사무실",
         summary = "E동에 위치한 게임공학과 학과사무실",
-        address = "시흥시 산기대학로 237 E동 3층",
+        address = "시흥시 산기대학로 237 E동 1층",
         phoneNumber = "031-8041-0550",
         category = "학과사무실",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/kG8gctWR/Kakao-Talk-20240528-094514941.jpg"
     ),
     PlaceInfo(
         name = "나노반도체공학과 학과사무실",
@@ -726,7 +725,7 @@ val OfficeList = listOf(
         phoneNumber = "031.8041.0710",
         category = "학과사무실",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/d3KYJNTD/Kakao-Talk-20240528-155120511-14.jpg"
     ),
     PlaceInfo(
         name = "경영학부 학과사무실",
@@ -735,7 +734,7 @@ val OfficeList = listOf(
         phoneNumber = "031-8041-0670",
         category = "학과사무실",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/pXXSKtxR/Kakao-Talk-20240528-155120511-01.jpg"
     ),
     PlaceInfo(
         name = "신소재공학과 학과사무실",
@@ -744,7 +743,7 @@ val OfficeList = listOf(
         phoneNumber = "031-8041-0580",
         category = "학과사무실",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/j5cXjLDN/Kakao-Talk-20240528-155120511-12.jpg"
     ),
     PlaceInfo(
         name = "생명화학공학과 학과사무실",
@@ -753,7 +752,7 @@ val OfficeList = listOf(
         phoneNumber = "031-8041-0610",
         category = "학과사무실",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/8zvm6yFT/Kakao-Talk-20240528-155120511-10.jpg"
     ),
     PlaceInfo(
         name = "에너지전기공학과 학과사무실",
@@ -762,7 +761,7 @@ val OfficeList = listOf(
         phoneNumber = "031-8041-0690",
         category = "학과사무실",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/rpCGhKCb/Kakao-Talk-20240528-155120511-07.jpg"
     ),
     PlaceInfo(
         name = "기계설계공학과 학과사무실",
@@ -771,7 +770,7 @@ val OfficeList = listOf(
         phoneNumber = "031-8041-0420",
         category = "학과사무실",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/KcsPsXBZ/Kakao-Talk-20240528-160913935-08.jpg"
     ),
     PlaceInfo(
         name = "메카트로닉스공학과 학과사무실",
@@ -780,7 +779,7 @@ val OfficeList = listOf(
         phoneNumber = "031-8041-0450",
         category = "학과사무실",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/XJY5QxvG/Kakao-Talk-20240528-160913935-10.jpg"
     ),
     PlaceInfo(
         name = "디자인공학부 학과사무실",
@@ -789,7 +788,7 @@ val OfficeList = listOf(
         phoneNumber = "031-8041-0660",
         category = "학과사무실",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/cCV81SBw/Kakao-Talk-20240528-160913935-11.jpg"
     ),
     PlaceInfo(
         name = "기계공학과 학과사무실",
@@ -798,7 +797,7 @@ val OfficeList = listOf(
         phoneNumber = "031-8041-0400",
         category = "학과사무실",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/jd77gDRX/Kakao-Talk-20240528-160913935-12.jpg"
     ),
     PlaceInfo(
         name = "전자공학부 학과사무실",
@@ -807,7 +806,7 @@ val OfficeList = listOf(
         phoneNumber = "031-8041-0470",
         category = "학과사무실",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/WtLhL7s7/Kakao-Talk-20240528-155713368.jpg"
     ),
 )
 
@@ -819,7 +818,7 @@ val SmokeAreaList =  listOf(
         phoneNumber = "",
         category = "",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/tTQ0PfvN/Kakao-Talk-20240528-090126350-20.jpg"
     ),
     PlaceInfo(
         name = "공학관 G동 뒷편",
@@ -828,7 +827,7 @@ val SmokeAreaList =  listOf(
         phoneNumber = "",
         category = "",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/qqGdpLLX/Kakao-Talk-20240528-090126350-17.jpg"
     ),
     PlaceInfo(
         name = "행정동 옆",
@@ -837,7 +836,7 @@ val SmokeAreaList =  listOf(
         phoneNumber = "",
         category = "",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/Wb9QStf3/Kakao-Talk-20240528-151001928.jpg"
     ),
     PlaceInfo(
         name = "산학융합관 옆",
@@ -846,19 +845,28 @@ val SmokeAreaList =  listOf(
         phoneNumber = "",
         category = "",
         recommendedMenu = "",
-        photos = ""
+        photos = "https://i.postimg.cc/0y415rp3/Kakao-Talk-20240528-090126350-19.jpg"
+    ),
+    PlaceInfo(
+        name = "Tip 기숙사 6층",
+        summary = "",
+        address = "",
+        phoneNumber = "",
+        category = "",
+        recommendedMenu = "",
+        photos = "https://i.postimg.cc/52CfDwzy/Kakao-Talk-20240528-090126350-02.jpg"
     ),
 
     )
 val OtherAreaList =  listOf(
     PlaceInfo(
         name = "큐브",
-        summary = "Tip 쥬씨 앞 큐브",
+        summary = "Tip 앞 큐브",
         address = "24시간 무인 프린터기",
         phoneNumber = "02-1688-5677",
         category = "프린터기",
         recommendedMenu = "흑백 40원, 컬러 400원",
-        photos = ""
+        photos = "https://i.postimg.cc/v8NQ1XFq/Kakao-Talk-20240528-160913935.jpg"
     ),
     PlaceInfo(
         name = "큐브",
@@ -867,7 +875,7 @@ val OtherAreaList =  listOf(
         phoneNumber = "02-1688-5677",
         category = "프린터기",
         recommendedMenu = "흑백 40원, 컬러 400원",
-        photos = ""
+        photos = "https://i.postimg.cc/wjzn3sv4/Kakao-Talk-20240528-160913935-02.jpg"
     ),
     PlaceInfo(
         name = "큐브",
@@ -876,7 +884,7 @@ val OtherAreaList =  listOf(
         phoneNumber = "02-1688-5677",
         category = "프린터기",
         recommendedMenu = "흑백 40원, 컬러 400원",
-        photos = ""
+        photos = "https://i.postimg.cc/K8cgZJn9/Kakao-Talk-20240528-160913935-06.jpg"
     ),
     PlaceInfo(
         name = "큐브",
@@ -885,7 +893,7 @@ val OtherAreaList =  listOf(
         phoneNumber = "02-1688-5677",
         category = "프린터기",
         recommendedMenu = "흑백 40원, 컬러 400원",
-        photos = ""
+        photos = "https://i.postimg.cc/3xcSmLFR/Kakao-Talk-20240528-155120511-08.jpg"
     ),
     PlaceInfo(
         name = "큐브",
@@ -894,7 +902,7 @@ val OtherAreaList =  listOf(
         phoneNumber = "02-1688-5677",
         category = "프린터기",
         recommendedMenu = "흑백 40원, 컬러 400원",
-        photos = ""
+        photos = "https://i.postimg.cc/MZ4sffsb/Kakao-Talk-20240528-155120511-02.jpg"
     ),
     PlaceInfo(
         name = "큐브",
@@ -903,7 +911,7 @@ val OtherAreaList =  listOf(
         phoneNumber = "02-1688-5677",
         category = "프린터기",
         recommendedMenu = "흑백 40원, 컬러 400원",
-        photos = ""
+        photos = "https://i.postimg.cc/T1G3t30k/Kakao-Talk-20240528-155713368-02.jpg"
     ),
     PlaceInfo(
         name = "큐브",
@@ -912,7 +920,16 @@ val OtherAreaList =  listOf(
         phoneNumber = "02-1688-5677",
         category = "프린터기",
         recommendedMenu = "흑백 40원, 컬러 400원",
-        photos = ""
+        photos = "https://i.postimg.cc/RZPG93nH/Kakao-Talk-20240528-155120511-09.jpg"
+    ),
+    PlaceInfo(
+        name = "큐브",
+        summary = "E동 2층 큐브",
+        address = "24시간 무인 프린터기",
+        phoneNumber = "02-1688-5677",
+        category = "프린터기",
+        recommendedMenu = "흑백 40원, 컬러 400원",
+        photos = "https://i.postimg.cc/fbL207hC/Kakao-Talk-20240528-155120511.jpg"
     ),
     PlaceInfo(
         name = "증명서 발급기",
@@ -921,7 +938,7 @@ val OtherAreaList =  listOf(
         phoneNumber = "070-8656-0551",
         category = "무인 발급기",
         recommendedMenu = "재학, 졸업, 성적증명서 등",
-        photos = ""
+        photos = "https://i.postimg.cc/ydsM53qS/Kakao-Talk-20240528-160913935-04.jpg"
     ),
     PlaceInfo(
         name = "증명서 발급기",
@@ -930,7 +947,7 @@ val OtherAreaList =  listOf(
         phoneNumber = "070-8656-0551",
         category = "무인 발급기",
         recommendedMenu = "재학, 졸업, 성적증명서 등",
-        photos = ""
+        photos = "https://i.postimg.cc/XqH69jzB/Kakao-Talk-20240528-160913935-07.jpg"
     ),
     PlaceInfo(
         name = "증명서 발급기",
@@ -939,6 +956,6 @@ val OtherAreaList =  listOf(
         phoneNumber = "070-8656-0551",
         category = "무인 발급기",
         recommendedMenu = "재학, 졸업, 성적증명서 등",
-        photos = ""
+        photos = "https://i.postimg.cc/TPDbShjG/Kakao-Talk-20240528-160913935-01.jpg"
     ),
 )

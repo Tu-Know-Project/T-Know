@@ -6,6 +6,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.core.content.ContextCompat.startActivity
+import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
 import com.example.t_know.R
@@ -225,11 +226,17 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::infl
         val today = Calendar.getInstance().get(Calendar.DAY_OF_WEEK)
         if (today == Calendar.TUESDAY) {
             binding.menuTako.text = "오늘은 타코야끼 오는 날~"
+            binding.takoModal.isVisible = true
         } else {
-            binding.menuTako.text = "타코야끼는 화요일"
+            binding.menuTako.text = "타코야끼는 화요일에 와요"
+            binding.takoModal.isVisible = false
         }
 
         binding.menuTako.setOnClickListener {
+            val dialog = TakoDialogFragment()
+            dialog.show(supportFragmentManager, "TakoDialogFragment")
+        }
+        binding.takoModal.setOnClickListener {
             val dialog = TakoDialogFragment()
             dialog.show(supportFragmentManager, "TakoDialogFragment")
         }
