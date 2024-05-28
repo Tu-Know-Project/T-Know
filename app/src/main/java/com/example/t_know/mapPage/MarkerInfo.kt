@@ -49,7 +49,67 @@ val RestaurantMarkerList = listOf(
         position = LatLng(37.346330898623854, 126.73402886674774),
         caption = "돈통마늘보쌈",
         placeInfo = RestaurantList[4]
-    )
+    ),
+    MarkerInfo(
+        category = Category.RESTAURANT,
+        position = LatLng(37.3437981, 126.737562),
+        caption = "평양왕족발순대",
+        placeInfo = RestaurantList[5]
+    ),
+    MarkerInfo(
+        category = Category.RESTAURANT,
+        position = LatLng(37.344020, 126.7372516),
+        caption = "두전콩밭",
+        placeInfo = RestaurantList[6]
+    ),
+    MarkerInfo(
+        category = Category.RESTAURANT,
+        position = LatLng(37.3447228, 126.7352268),
+        caption = "고가네맛집",
+        placeInfo = RestaurantList[7]
+    ),
+    MarkerInfo(
+        category = Category.RESTAURANT,
+        position = LatLng(37.3449572, 126.738475),
+        caption = "메차쿠타 돈까스",
+        placeInfo = RestaurantList[8]
+    ),
+    MarkerInfo(
+        category = Category.RESTAURANT,
+        position = LatLng(37.3448728, 126.7375478),
+        caption = "샤브린",
+        placeInfo = RestaurantList[9]
+    ),
+    MarkerInfo(
+        category = Category.RESTAURANT,
+        position = LatLng(37.3433511, 126.7371343),
+        caption = "월미당",
+        placeInfo = RestaurantList[10]
+    ),
+    MarkerInfo(
+        category = Category.RESTAURANT,
+        position = LatLng(37.3455661, 126.7324764),
+        caption = "전라도연탄구이",
+        placeInfo = RestaurantList[11]
+    ),
+    MarkerInfo(
+        category = Category.RESTAURANT,
+        position = LatLng(37.34590550000001, 126.7316332),
+        caption = "정정아식당",
+        placeInfo = RestaurantList[12]
+    ),
+    MarkerInfo(
+        category = Category.RESTAURANT,
+        position = LatLng(37.3435717, 126.735707),
+        caption = "한가네 숯불닭갈비",
+        placeInfo = RestaurantList[13]
+    ),
+    MarkerInfo(
+        category = Category.RESTAURANT,
+        position = LatLng(37.344264, 126.7348211),
+        caption = "즉석기계우동 옛날짜장",
+        placeInfo = RestaurantList[14]
+    ),
 )
 
 val DessertMarkerList = listOf(
@@ -88,7 +148,19 @@ val DessertMarkerList = listOf(
         position = LatLng(37.3447228, 126.7352268),
         caption = "읍천리 382",
         placeInfo = DessertList[5]
-    )
+    ),
+    MarkerInfo(
+        category = Category.DESSERT,
+        position = LatLng(37.3453268, 126.7362804),
+        caption = "재리스토스트카페",
+        placeInfo = DessertList[6]
+    ),
+    MarkerInfo(
+        category = Category.DESSERT,
+        position = LatLng(37.3470703, 126.7333626),
+        caption = "하이샌드",
+        placeInfo = DessertList[7]
+    ),
 )
 
 val BarMarkerList = listOf(

@@ -55,9 +55,98 @@ val RestaurantList = listOf(
         category = "보쌈, 한정식",
         recommendedMenu = "마늘 보쌈 정식",
         photos = "url"
+    ),
+    PlaceInfo(
+        name = "평양왕족발순대",
+        summary = "직접 손질해서 삶는 국내산 족발과 직접 만든 순대를 넣은 순댓국 집",
+        address = "경기 시흥시 중심상가4길 18 1층 106호",
+        phoneNumber = "031-497-0337",
+        category = "족발, 한정식",
+        recommendedMenu = "평양왕족발, 순댓국",
+        photos = "url"
+    ),
+    PlaceInfo(
+        name = "두전콩밭",
+        summary = "국내산 콩을 사용한 건강한 식당",
+        address = "경기 시흥시 중심상가로 199",
+        phoneNumber = "0507-1342-3232",
+        category = "두부요리, 한정식",
+        recommendedMenu = "김치두부전골, 콩비지찌개",
+        photos = "url"
+    ),
+    PlaceInfo(
+        name = "고가네맛집",
+        summary = "다양한 종류의 싱싱한 생선을 저렴하게 드실 수 있는 어머니 손맛 생선구이 맛집!",
+        address = "경기도 시흥시 정왕동 1742-1",
+        phoneNumber = "031-319-0415",
+        category = "생선구이, 한정식",
+        recommendedMenu = "생선구이정식, 갈치조림",
+        photos = "url"
+    ),
+    PlaceInfo(
+        name = "메차쿠차 돈까스",
+        summary = "다양한 돈가스를 맛볼 수 있는 집",
+        address = "경기 시흥시 정왕대로 230 제일프라자 111, 112",
+        phoneNumber = "031-504-9000",
+        category = "돈까스, 일식",
+        recommendedMenu = "메차쿠차 돈가스, 고구마 치즈 돈가스, 김치나베",
+        photos = "url"
+    ),
+    PlaceInfo(
+        name = "샤브린",
+        summary = "샤브샤브와 월남쌈을 한번에 즐길 수 있는 정왕동 샤브샤브",
+        address = "경기 시흥시 중심상가2길 22 203호",
+        phoneNumber = "0507-1447-9995",
+        category = "샤브샤브, 일식",
+        recommendedMenu = "소등심 샤브, 등심 쌀국수",
+        photos = "url"
+    ),
+    PlaceInfo(
+        name = "월미당",
+        summary = "매일 직접 우려내는 신선하고 진한 육수가 일품인 베트남쌀국수 전문점",
+        address = "경기 시흥시 중심상가4길 24-1 1층 월미당",
+        phoneNumber = "0507-1345-6882",
+        category = "쌀국수, 베트남 음식",
+        recommendedMenu = "차돌 쌀국수, 분짜",
+        photos = "url"
+    ),
+    PlaceInfo(
+        name = "전라도연탄구이",
+        summary = "정왕동 맛집 전라도 맛있는 연탄구이",
+        address = "경기 시흥시 서촌상가2길 29",
+        phoneNumber = "031-432-9500",
+        category = "돼지고기구이, 한정식",
+        recommendedMenu = "생삼겹살, 김치찌개",
+        photos = "url"
+    ),
+    PlaceInfo(
+        name = "정정아식당",
+        summary = "닭볶음탕과 꼬막무침이 맛있는 정왕동 맛집",
+        address = "경기 시흥시 서촌상가4길 20 106호, 107호, 108호",
+        phoneNumber = "0507-1374-9870",
+        category = "닭볶음탕, 한정식",
+        recommendedMenu = "닭볶음탕, 꼬막무침",
+        photos = "url"
+    ),
+    PlaceInfo(
+        name = "한가네 숯불닭갈비",
+        summary = "전통 숯불닭갈비와 이탈리안 퓨전 토마토 스파게티 닭갈비를 맛볼 수 있는 맛집",
+        address = "경기 시흥시 중심상가3길 31 한가네숯불닭갈비",
+        phoneNumber = "0507-1378-4792",
+        category = "닭갈비, 한정식",
+        recommendedMenu = "숯불양념닭갈비, 쟁반막국수",
+        photos = "url"
+    ),
+    PlaceInfo(
+        name = "즉석기계우동 옛날짜장",
+        summary = "즉석으로 면을 뽑으며 진하게 우려낸 육수로 만든 기계우동과 기름기 없이 달콤하고 고소한 옛날짜장을 맛볼 수 있는 맛집",
+        address = "경기 시흥시 중심상가1길 3-6 101호 기계우동 옛날짜장",
+        phoneNumber = "0507-1364-7417",
+        category = "분식, 한정식",
+        recommendedMenu = "비빔우동, 닭알김밥",
+        photos = "url"
     )
-    // 평양왕족발순대, 콩받, 고가네, 메챠쿠챠 돈까스, 샤브린
-
+    // 평양왕족발순대 o, 콩받 o, 고가네 o, 메챠쿠챠 돈까스 o, 샤브린 o
 )
 
 val DessertList = listOf(
@@ -115,8 +204,43 @@ val DessertList = listOf(
         recommendedMenu = "불고기 샌드위치, 자두 쥬스",
         photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20221102_236%2F1667380207048wMtwl_JPEG%2F1_%25B0%25A1%25B0%25D4_%25C0%25CC%25B9%25CC%25C1%25F6_%25281%2529.jpg"
     ),
-
-    )
+    PlaceInfo(
+        name = "재리스토스트카페",
+        summary = "직접 연구하여 개발한 소스 조합으로 중독성 강한 토스트와 주문 즉시 튀겨낸 츄러스 맛집",
+        address = "경기 시흥시 중심상가2길 12-6 2층 204호",
+        phoneNumber = "010-9943-2571",
+        category = "토스트, 카페",
+        recommendedMenu = "하프토스트, 츄러스",
+        photos = "url"
+    ),
+    PlaceInfo(
+        name = "하이샌드",
+        summary = "베이글 샌드위치와 파스타 샐러드 맛집",
+        address = "경기 시흥시 서촌상가2길 12 103호",
+        phoneNumber = "070-4151-3364",
+        category = "샌드위치, 카페",
+        recommendedMenu = "오믈렛 베이컨 베이글, 쉬림프 파스타 샐러드",
+        photos = "url"
+    ),
+    PlaceInfo(
+        name = "츄러스캠퍼스",
+        summary = "정왕동 49블록에 위치한 커피와 디저트가 맛있는 츄러스 캠퍼스",
+        address = "경기 시흥시 중심상가1길 14 112호",
+        phoneNumber = "0507-1384-1320",
+        category = "츄러스, 카페",
+        recommendedMenu = "오리지널 츄러스, 아츄",
+        photos = "url"
+    ),
+    PlaceInfo(
+        name = "쁘숑베이커리",
+        summary = "건강한 방식으로 조리하는 천연발효빵 제작 빵집.",
+        address = "경기 시흥시 정왕대로 174 114,115호 쁘숑베이커리",
+        phoneNumber = "0507-1332-3580",
+        category = "빵, 카페",
+        recommendedMenu = "옥수수마약빵, 생크림크로와상, 엔젤쉬폰",
+        photos = "url"
+    ),
+)
 
 val BarList = listOf(
     PlaceInfo(
@@ -437,37 +561,272 @@ val PartnerList = listOf(
         recommendedMenu = "1000원 2곡",
         photos = "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240208_37%2F1707396048987qsrVz_JPEG%2FKakaoTalk_20240208_214010471_04.jpg"
     ),
-    )
+)
 
 val FacilityList = listOf(
     PlaceInfo(
-        name = "Tip(기술혁신파크)",
-        summary = "제 1기숙사, 여러 편의시설이 있다.",
-        address = "시흥시 산기대학로 237 Tip",
+        name = "Tip GX룸",
+        summary = "제 1기숙사 6층에 위치한 GX룸.",
+        address = "시흥시 산기대학로 237 Tip 6층",
         phoneNumber = "031-8041-0100",
-        category = "기숙사, 라운지, 편의시설",
+        category = "필라테스, 요가, 미러룸",
         recommendedMenu = "--",
-        photos = "https://i.namu.wiki/i/4JwTTddYCPmbsPLI9eSXpSLquSuu_-_5Q0jeFm21FGAFJllcBeEW6qEY25fXA2UP4hwd61d4CNzwoNOpjplo0w.webp"
+        photos = ""
     ),
-    )
+    PlaceInfo(
+        name = "Tip 노래방",
+        summary = "제 1기숙사 6층에 위치한 노래방.",
+        address = "시흥시 산기대학로 237 Tip 6층",
+        phoneNumber = "031-8041-0100",
+        category = "노래방",
+        recommendedMenu = "--",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "Tip 헬스장",
+        summary = "제 1기숙사 6층에 위치한 헬스장.",
+        address = "시흥시 산기대학로 237 Tip 6층",
+        phoneNumber = "031-8041-0100",
+        category = "헬스장",
+        recommendedMenu = "--",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "Tip 라운지",
+        summary = "제 1기숙사 1층에 위치한 라운지.",
+        address = "시흥시 산기대학로 237 Tip 1층",
+        phoneNumber = "031-8041-0100",
+        category = "라운지",
+        recommendedMenu = "--",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "하나 라운지",
+        summary = "제 1기숙사 1층에 위치한 하나은행 소속 라운지.",
+        address = "시흥시 산기대학로 237 Tip 1층",
+        phoneNumber = "031-8041-0100",
+        category = "라운지",
+        recommendedMenu = "--",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "Tip 2층 라운지",
+        summary = "제 1기숙사 2층에 위치한 라운지.",
+        address = "시흥시 산기대학로 237 Tip 2층",
+        phoneNumber = "031-8041-0100",
+        category = "라운지",
+        recommendedMenu = "--",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "Tip 3층 라운지",
+        summary = "제 1기숙사 3층에 위치한 라운지.",
+        address = "시흥시 산기대학로 237 Tip 3층",
+        phoneNumber = "031-8041-0100",
+        category = "라운지",
+        recommendedMenu = "--",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "제2기숙사 1층 라운지",
+        summary = "제 2기숙사 1층에 위치한 라운지.",
+        address = "시흥시 산기대학로 237 제 2기숙사 1층",
+        phoneNumber = "031-8041-0100",
+        category = "라운지",
+        recommendedMenu = "--",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "제2기숙사 2층 라운지",
+        summary = "제 2기숙사 2층에 위치한 라운지.",
+        address = "시흥시 산기대학로 237 제 2기숙사 2층",
+        phoneNumber = "031-8041-0100",
+        category = "라운지",
+        recommendedMenu = "--",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "종합교육관 라운지 채움, 나눔",
+        summary = "종합교육관 2층에 위치한 라운지.",
+        address = "시흥시 산기대학로 237 종합교육관 2층",
+        phoneNumber = "031-8041-0100",
+        category = "라운지",
+        recommendedMenu = "--",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "B동 라운지 배움",
+        summary = "B동에 위치한 라운지.",
+        address = "시흥시 산기대학로 237 B동 1층",
+        phoneNumber = "031-8041-0100",
+        category = "라운지",
+        recommendedMenu = "--",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "D동 라운지 다룸",
+        summary = "D동에 위치한 라운지.",
+        address = "시흥시 산기대학로 237 D동 1층",
+        phoneNumber = "031-8041-0100",
+        category = "라운지",
+        recommendedMenu = "--",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "E동 라운지 이룸",
+        summary = "E동에 위치한 라운지.",
+        address = "시흥시 산기대학로 237 E동 5층",
+        phoneNumber = "031-8041-0100",
+        category = "라운지",
+        recommendedMenu = "--",
+        photos = ""
+    ),
+)
 val OfficeList = listOf(
     PlaceInfo(
-        name = "",
-        summary = "",
-        address = "",
-        phoneNumber = "",
-        category = "",
+        name = "컴퓨터공학부 학과사무실",
+        summary = "E동에 위치한 컴퓨터공학부 학과사무실",
+        address = "시흥시 산기대학로 237 E동 3층",
+        phoneNumber = "031-8041-0510",
+        category = "학과사무실",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "게임공학과 학과사무실",
+        summary = "E동에 위치한 게임공학과 학과사무실",
+        address = "시흥시 산기대학로 237 E동 3층",
+        phoneNumber = "031-8041-0550",
+        category = "학과사무실",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "나노반도체공학과 학과사무실",
+        summary = "P동에 위치한 나노반도체공학과 학과사무실",
+        address = "시흥시 산기대학로 237 P동 5층",
+        phoneNumber = "031.8041.0710",
+        category = "학과사무실",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "경영학부 학과사무실",
+        summary = "G동에 위치한 경영학부 학과사무실",
+        address = "시흥시 산기대학로 237 G동 3층",
+        phoneNumber = "031-8041-0670",
+        category = "학과사무실",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "신소재공학과 학과사무실",
+        summary = "D동에 위치한 신소재공학과 학과사무실",
+        address = "시흥시 산기대학로 237 D동 2층",
+        phoneNumber = "031-8041-0580",
+        category = "학과사무실",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "생명화학공학과 학과사무실",
+        summary = "D동에 위치한 생명화학공학과 학과사무실",
+        address = "시흥시 산기대학로 237 D동 3층",
+        phoneNumber = "031-8041-0610",
+        category = "학과사무실",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "에너지전기공학과 학과사무실",
+        summary = "C동에 위치한 에너지전기공학과 학과사무실",
+        address = "시흥시 산기대학로 237 C동 3층",
+        phoneNumber = "031-8041-0690",
+        category = "학과사무실",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "기계설계공학과 학과사무실",
+        summary = "B동에 위치한 기계설계공학과 학과사무실",
+        address = "시흥시 산기대학로 237 B동 2층",
+        phoneNumber = "031-8041-0420",
+        category = "학과사무실",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "메카트로닉스공학과 학과사무실",
+        summary = "B동에 위치한 메카트로닉스공학과 학과사무실",
+        address = "시흥시 산기대학로 237 B동 3층",
+        phoneNumber = "031-8041-0450",
+        category = "학과사무실",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "디자인공학부 학과사무실",
+        summary = "A동에 위치한 디자인공학부 학과사무실",
+        address = "시흥시 산기대학로 237 A동 4층",
+        phoneNumber = "031-8041-0660",
+        category = "학과사무실",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "기계공학과 학과사무실",
+        summary = "A동에 위치한 기계공학과 학과사무실",
+        address = "시흥시 산기대학로 237 A동 2층",
+        phoneNumber = "031-8041-0400",
+        category = "학과사무실",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "전자공학부 학과사무실",
+        summary = "산학융합관에 위치한 전자공학부 학과사무실",
+        address = "시흥시 산기대학로 237 산학융합관 5층",
+        phoneNumber = "031-8041-0470",
+        category = "학과사무실",
         recommendedMenu = "",
         photos = ""
     ),
 )
 val SmokeAreaList =  listOf(
     PlaceInfo(
-        name = "",
+        name = "Tip 기숙사 뒷편",
         summary = "",
         address = "",
         phoneNumber = "",
         category = "",
         recommendedMenu = "",
         photos = ""
-    ),)
+    ),
+    PlaceInfo(
+        name = "공학관 G동 뒷편",
+        summary = "",
+        address = "",
+        phoneNumber = "",
+        category = "",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "행정동 옆",
+        summary = "",
+        address = "",
+        phoneNumber = "",
+        category = "",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    PlaceInfo(
+        name = "산학융합관 옆",
+        summary = "",
+        address = "",
+        phoneNumber = "",
+        category = "",
+        recommendedMenu = "",
+        photos = ""
+    ),
+    )
